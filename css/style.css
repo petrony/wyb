@@ -14668,6 +14668,23 @@ time.chat-time {
   opacity: 1;
 }
 
+.link-remove-black {
+  opacity: 1;
+  color: #495057;
+  font-size: 14px;
+}
+
+.link-remove-black span, .link-remove-black i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.link-remove-black i {
+  position: relative;
+  top: -2px;
+  margin-right: 12px;
+}
+
 .btn {
   padding: 10px 16px;
   font-size: 14px;

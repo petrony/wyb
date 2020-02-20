@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../css/style.min.css" id="main-css">
   <link rel="stylesheet" href="../css/sidebar-blue.min.css" id="sidebar-css">
 
-  <title>Mimity Admin - Редактирование данных пользователя</title>
+  <title>Mimity Admin - Редактирование организации</title>
 </head>
 
 <body>
@@ -68,15 +68,15 @@
           <li><a href="p1-2-2-1.html" >Менеджеры ТЦ</a></li>
           <li><a href="p1-2-3-1.html" >Владельцы организаций</a></li>
           <li><a href="p1-2-4-1.html" >Сотрудники организаций</a></li>
-          <li><a href="p1-2-5-1.html"  class="active" >Пользователи</a></li>
+          <li><a href="p1-2-5-1.html" >Пользователи</a></li>
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link has-icon" href="p1-3-1-1.html">
+        <a class="nav-link has-icon active" href="p1-3-1-1.html">
           <i><img src="../img/icons/merchant.svg" alt=""></i> Мерчанты
         </a>
         <ul>
-          <li><a href="p1-3-1-1.html" >Каталог организаций</a></li>
+          <li><a href="p1-3-1-1.html"  class="active" >Каталог организаций</a></li>
           <li><a href="p1-3-2-1.html" >Счета на оплату</a></li>
           <li><a href="p1-3-3-1.html" >ККТ</a></li>
         </ul>
@@ -157,95 +157,38 @@
     <!-- Main body -->
     <div class="main-body">
 
-      <h5 class="mb-3 pt-2 pb-2">Редактирование данных пользователя</h5>
+      <h5 class="mb-3 pt-2 pb-2">Редактирование организации</h5>
 
-      <div class="card card-style-1">
+      <div class="card card-style-1 mb-3">
         <div class="card-body">
           <form action="#">
-            <div class="row mb-3">
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label for="phone">Телефон</label>
-                  <input type="text" name="phone" class="form-control" placeholder="+7 (913) 792-67-69">
-                </div>
-                <div class="form-group">
-                  <label for="email">E-mail</label>
-                  <input type="text" name="email" class="form-control" placeholder="Youname@gmai.com">
-                </div>
-                <div class="form-group">
-                  <label for="password">Пароль</label>
-                  <input type="password" name="password" class="form-control" placeholder="********">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label for="name1">Фамилия</label>
-                  <input type="text" name="name1" class="form-control" placeholder="Гришин">
-                </div>
-                <div class="form-group">
-                  <label for="name2">Имя</label>
-                  <input type="text" name="name2" class="form-control" placeholder="Тимур">
-                </div>
-                <div class="form-group">
-                  <label for="name3">Отчество</label>
-                  <input type="text" name="name3" class="form-control" placeholder="Сергеевич">
-                </div>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div class="col-lg-6">
-                <div class="row">
-                  <div class="col-sm-6 mb-sm-0 mb-3">
-                    <div class="form-group d-flex">
-                      <span class="active_check mr-5">Активно</span>
-                      <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch0" checked>
-                        <label class="custom-control-label" for="customSwitch0"></label>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="col-sm-6">
-                    <div class="form-group d-flex">
-                      <span class="active_check mr-5">Администратор</span>
-                      <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                        <label class="custom-control-label" for="customSwitch1"></label>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                </div>
-              </div>
-            </div>
-            <div class="row align-items-end">
-              <div class="col-md-6 mb-md-0 mb-3">
-                <div class="block__user--info border p-4 rounded">
-                  <p>
-                    <i class="d-inline-block align-middle mr-2"><img src="../img/icons/rub.svg" alt=""></i>
-                    <span>Подтвержденный баланс:  4 250 ₽</span>
-                  </p>
-                  <p>
-                    <i class="d-inline-block align-middle mr-2"><img src="../img/icons/reload.svg" alt=""></i>
-                    <span>Ожидает подтверждение:  320 ₽</span>
-                  </p>
-                  <p class="mb-0">
-                    <i class="d-inline-block align-middle mr-2"><img src="../img/icons/bonuse-g.svg" alt=""></i>
-                    <span class="d-inline-block align-middle">Бонусы:  170</span>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="block__user-edit-acaunt--info">
-                  <p class="text-right mb-1"><span class="text-small">Аккаунт создан:  2020-02-08 14:19</span></p>
-                  <p class="text-right mb-0"><span class="text-small">Изменён:  2020-02-11 10:28</span></p>
-                </div>
-              </div>
-            </div>
             <hr>
             <div class="form-group mb-0 pt-3 pb-3">
               <button class="btn btn-rose mr-sm-3 mb-1">Сохранить</button>
               <a class="btn btn-white mb-1" href="p1-2-5-1.html">Вернуться назад</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card card-style-1">
+        <div class="card-body">
+          <form action="#">
+            <hr>
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <div class="form-group mb-0 pt-3 pb-3">
+                  <button class="btn btn-rose mr-sm-3 mb-1">Сохранить</button>
+                </div>
+              </div>
+              <div class="col-md-5 text-right">
+                <a href="#" class="link-remove link-remove-black mr-5">
+                  <i>
+                    <img src="../img/icons/trash2.svg" alt="">
+                   </i>
+                  <span>Удалить филиал</span>
+                </a>
+              </div>
             </div>
           </form>
         </div>
