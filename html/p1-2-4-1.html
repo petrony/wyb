@@ -1,0 +1,1117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Font & Icon -->
+  <link href="../font/roboto.min.css" rel="stylesheet">
+  <link href="../font/roboto-condensed.min.css" rel="stylesheet">
+  <link href="../../plugins/material-design-icons-iconfont/material-design-icons.min.css" rel="stylesheet">
+  <link href="../../plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/flatpickr/flatpickr.min.css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+  <!-- Main Style -->
+  <link rel="stylesheet" href="../css/style.min.css" id="main-css">
+  <link rel="stylesheet" href="../css/sidebar-blue.min.css" id="sidebar-css">
+
+  <title>Mimity Admin - Сотрудники организаций</title>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+<div class="sidebar">
+
+  <!-- Sidebar header -->
+  <div class="sidebar-header">
+    <a href="index.html" class="logo">
+      <span>
+        <img src="../img/logo.svg" alt="Logo" id="main-logo">
+      </span>
+      <span>
+        <img src="../img/logo-mini.svg" alt="Logo" id="main-logo">
+      </span>
+    </a>
+    <a href="#" class="nav-link nav-icon rounded-circle ml-auto" data-toggle="sidebar">
+      <i class="material-icons">close</i>
+    </a>
+  </div>
+  <!-- /Sidebar header -->
+
+  <!-- Sidebar body -->
+  <div class="sidebar-body">
+    <ul class="nav nav-sub" id="menu">
+      <li class="nav-item">
+        <a class="nav-link has-icon" href="p1-1-1.html">
+          <!-- <i class="fa fa-shopping-cart"></i> -->
+          <i><img src="../img/icons/bascket.svg" alt=""></i> Каталог товаров</a>
+        <ul>
+          <li><a href="p1-1-1.html" >Классификатор товаров</a></li>
+          <li><a href="p1-1-2-1.html" >Товары и услуги</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-icon" href="p1-2-1-1.html">
+          <!-- <i class="fa fa-users"></i> -->
+          <i><img src="../img/icons/users.svg" alt=""></i> Роли
+        </a>
+        <ul>
+          <li><a href="p1-2-1-1.html" >Владельцы ТЦ</a></li>
+          <li><a href="p1-2-2-1.html" >Менеджеры ТЦ</a></li>
+          <li><a href="p1-2-3-1.html" >Владельцы организаций</a></li>
+          <li><a href="p1-2-4-1.html"  class="active" >Сотрудники организаций</a></li>
+          <li><a href="p1-2-5-1.html" >Пользователи</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-icon" href="#">
+          <i><img src="../img/icons/merchant.svg" alt=""></i> Мерчанты
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-icon" href="#">
+          <i><img src="../img/icons/cashback.svg" alt=""></i> Кэшбэки
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-icon" href="#">
+          <i><img src="../img/icons/withdraw.svg" alt=""></i> Выводы
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-icon" href="#">
+          <i><img src="../img/icons/bonus.svg" alt=""></i> Бонусы
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-icon" href="#">
+          <i><img src="../img/icons/push.svg" alt=""></i> Push-нотификации
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-icon" href="#">
+          <i><img src="../img/icons/like.svg" alt=""></i> Рекомендации
+        </a>
+      </li>
+      <li class="nav-item mb-4">
+        <a class="nav-link has-icon" href="#">
+          <i><img src="../img/icons/doc.svg" alt=""></i> Отчёты
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-icon" href="#">
+          <i><img src="../img/icons/settings.svg" alt=""></i> Настройки
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- /Sidebar body -->
+
+</div>
+<!-- /Sidebar -->
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Main header -->
+<div class="main-header justify-content-between">
+  <a class="nav-link nav-icon rounded-circle" href="#" data-toggle="sidebar"><i class="material-icons">menu</i></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item dropdown">
+      <a class="nav-link has-img dropdown-toggle px-2" href="#" data-toggle="dropdown">
+        <img src="../img/ava.jpg" alt="Admin" class="rounded-circle mr-2">
+        <span class="d-none d-sm-block mr-3 ml-2">Анатолий Руденко</span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right shadow border-0 p-0">
+        <div class="card border-0">
+          <div class="card-header flex-column px-5">
+            <img src="../img/ava_big.jpg" alt="Admin" class="rounded-circle mb-2" width="75" height="75">
+            <h6>Пользователь</h6>
+            <small class="text-muted">Анатолий Руденко</small>
+          </div>
+          <div class="list-group list-group-flush list-group-sm list-group-borderless py-2">
+            <a href="#" class="list-group-item list-group-item-action has-icon"><i class="material-icons mr-2">person</i>Мой профиль</a>
+            <a href="#" class="list-group-item list-group-item-action has-icon"><i class="material-icons mr-2">settings</i>Настройки</a>
+            <a href="../html/login.html" class="list-group-item list-group-item-action has-icon text-danger"><i class="material-icons mr-2">exit_to_app</i>Выйти</a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- /Main header -->
+
+    <!-- Main body -->
+    <div class="main-body">
+      <div class="row align-items-center">
+        <div class="col-sm-6 mb-3">
+          <h5 class="mb-0">Сотрудники организаций</h5>
+        </div>
+        <div class="col-sm-6 text-sm-right mb-3">
+          <a href="#" class="btn btn-rose">
+            <i class="mr-1">
+              <img src="../img/icons/plus.svg" alt="">
+            </i>
+            <span>Добавить</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="card card-style-1">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-lg-9 col-md-8 mb-md-0 mb-2">
+              <div class="d-sm-flex align-items-center">
+                <label class="text-nowrap mr-3 mb-sm-0 mb-2">
+                  <img class="align-middle" src="../img/icons/calendar.svg" alt="">
+                  <span class="d-inline-block align-middle"> Показывать за:</span>
+                </label>
+                <div class="daterange">
+                  <input type="text" class="border-0 daterangepicker" placeholder="">
+                  <img src="../img/icons/arrow.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mb-md-0 mb-2">
+              <div class="block__serach d-flex">
+                <button class="btn btn-link p-0"><img src="../img/icons/search.svg" alt=""></button>
+                <input class="border-0 w-100 form-search" type="text" placeholder="Поиск...">
+              </div>
+            </div>
+          </div>
+          <table id="example" class="table dt-responsive nowrap w-100 border-bottom">
+  <!-- Filter columns -->
+  <thead>
+    <tr>
+      <th class="id"><strong>ID</strong> <i class="fa fa-sort-amount-up-alt"></i></th>
+      <th>Время создания</th>
+      <th>ТЦ</th>
+      <th>Организация</th>
+      <th>Пользователь</th>
+      <th>Роль</th>
+      <th style="width: 200px;">Актив.</th>
+    </tr>
+  </thead>
+  <!-- /Filter columns -->
+  <tbody>
+    <tr>
+      <td class="align-middle">1138</td>
+      <td class="align-middle">2020-02-08 06:38</td>
+      <td class="align-middle">Динамо</td>
+      <td class="align-middle">Динамо</td>
+      <td class="align-middle">+7 (919) ***-*9-32 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+              <label class="custom-control-label" for="customSwitch1"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1137</td>
+      <td class="align-middle">2020-02-07 17:50</td>
+      <td class="align-middle">Fixem</td>
+      <td class="align-middle">Fixem</td>
+      <td class="align-middle">+7 (999) ***-*7-72 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+              <label class="custom-control-label" for="customSwitch2"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1139</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle">Sneakerf1x</td>
+      <td class="align-middle">Sneakerf1x</td>
+      <td class="align-middle">+7 (977) ***-*3-90 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+              <label class="custom-control-label" for="customSwitch3"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1140</td>
+      <td class="align-middle">2020-02-07 10:27</td>
+      <td class="align-middle">Сияриён</td>
+      <td class="align-middle">Сияриён</td>
+      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch4">
+              <label class="custom-control-label" for="customSwitch4"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1142</td>
+      <td class="align-middle">2020-02-07 10:27</td>
+      <td class="align-middle">Сияриён-1</td>
+      <td class="align-middle">Сияриён-1</td>
+      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch6">
+              <label class="custom-control-label" for="customSwitch6"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1143</td>
+      <td class="align-middle">2020-02-07 10:27</td>
+      <td class="align-middle">Сияриён</td>
+      <td class="align-middle">Сияриён</td>
+      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch7">
+              <label class="custom-control-label" for="customSwitch7"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1144</td>
+      <td class="align-middle">2020-02-07 10:27</td>
+      <td class="align-middle">Бургерная John’s</td>
+      <td class="align-middle">John’s</td>
+      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch8" checked>
+              <label class="custom-control-label" for="customSwitch8"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1145</td>
+      <td class="align-middle">2020-02-07 10:27</td>
+      <td class="align-middle">Обучение груми...</td>
+      <td class="align-middle">Груминг</td>
+      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch9" checked>
+              <label class="custom-control-label" for="customSwitch9"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1146</td>
+      <td class="align-middle">2020-02-07 10:27</td>
+      <td class="align-middle">Груминг-студия ...</td>
+      <td class="align-middle">Алис групп</td>
+      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch10">
+              <label class="custom-control-label" for="customSwitch10"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1148</td>
+      <td class="align-middle">2020-02-07 10:27</td>
+      <td class="align-middle">Вкусные Букеты</td>
+      <td class="align-middle">Perfecto Bouquet</td>
+      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch10">
+              <label class="custom-control-label" for="customSwitch10"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1149</td>
+      <td class="align-middle">2020-02-07 10:27</td>
+      <td class="align-middle">Вкусные Букеты</td>
+      <td class="align-middle">Perfecto Bouquet</td>
+      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch11">
+              <label class="custom-control-label" for="customSwitch11"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">1150</td>
+      <td class="align-middle">2020-02-07 10:27</td>
+      <td class="align-middle">Вкусные Букеты</td>
+      <td class="align-middle">Perfecto Bouquet</td>
+      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
+      <td class="align-middle">Сотрудник</td>
+      <td class="align-middle">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch12">
+              <label class="custom-control-label" for="customSwitch12"></label>
+            </div>
+          </div>
+          <div class="col text-center">
+            <a href="#" class="link-edit">
+              <img src="../img/icons/edit.svg" alt="">
+            </a>
+          </div>
+          <div class="col text-center">
+            <div class="drop-box">
+  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/trash.svg" alt="">
+  </a>
+  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
+    <h5 class="mb-3">Удалить классификатор?</h5>
+    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
+    <div class="text-right">
+      <a href="#">Отменить</a>
+      <a class="ml-3" href="#">Удалить</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+  </tbody>
+</table>
+        </div>
+      </div>
+    </div>
+    <!-- /Main body -->
+  </div>
+  <!-- /Main -->
+
+  <!-- Search Modal -->
+  <div class="modal" id="searchModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-1 p-lg-3">
+          <form>
+            <div class="input-group input-group-lg input-group-search">
+              <div class="input-group-prepend">
+                <button class="btn btn-text-secondary btn-icon btn-lg rounded-circle" type="button" data-dismiss="modal">
+                  <i class="material-icons">chevron_left</i>
+                </button>
+              </div>
+              <input type="search" class="form-control form-control-lg border-0 shadow-none mx-1 px-0 px-lg-3" id="searchInput" placeholder="Search..." autocomplete="off" required>
+              <div class="input-group-append">
+                <button class="btn btn-text-secondary btn-icon btn-lg rounded-circle" type="submit">
+                  <i class="material-icons">search</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Search Modal -->
+  <!-- Chat Modal -->
+  <div class="modal fade modal-content-right chat-modal" id="chatModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable modal-sm" role="document">
+
+      <!-- Conversation -->
+      <div class="modal-content active" id="conversation">
+        <div class="modal-header">
+          <h5 class="modal-title">Conversations</h5>
+          <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Estella Griffin</h6>
+                  <p class="msg-preview unread">How will you get there ? <span class="badge badge-warning badge-pill">2</span></p>
+                </div>
+                <small class="msg-preview-time">11:45 AM</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user2.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Herbert Frazier</h6>
+                  <p class="msg-preview"><span class="msg-status"></span> You: Thanks for the advice.</p>
+                </div>
+                <small class="msg-preview-time">10:05 AM</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user3.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Laura Matthews</h6>
+                  <p class="msg-preview">Sounds good.</p>
+                </div>
+                <small class="msg-preview-time">Monday</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user4.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Randy Sanders</h6>
+                  <p class="msg-preview">You are welcome.</p>
+                  <small class="msg-preview-time">Yesterday</small>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user5.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Harriett Pearson</h6>
+                  <p class="msg-preview"><span class="msg-status read"></span> You: Sure, I can work well with...</p>
+                </div>
+                <small class="msg-preview-time">Sep 30</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="btn btn-icon btn-primary rounded-circle shadow btn-lg btn-toggle-contact" type="button" data-toggle="chat" data-target="#contacts">
+          <i class="material-icons">add</i>
+        </button>
+      </div>
+      <!-- /Conversation -->
+
+      <!-- Contacts -->
+      <div class="modal-content" id="contacts">
+        <div class="modal-header justify-content-start">
+          <button class="btn btn-icon btn-light bg-white btn-sm rounded-circle mr-3" type="button" data-toggle="chat" data-target="#conversation">
+            <i class="material-icons">chevron_left</i>
+          </button>
+          <h5 class="modal-title">Contacts</h5>
+        </div>
+        <div class="modal-body p-0">
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Estella Griffin</h6>
+                  <p class="contact-status online">Online</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user2.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Herbert Frazier</h6>
+                  <p class="contact-status online">Online</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user3.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Laura Matthews</h6>
+                  <p class="contact-status">07:01 PM</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user4.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Randy Sanders</h6>
+                  <p class="contact-status">Yesterday</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user5.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Harriett Pearson</h6>
+                  <p class="contact-status">Monday</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Erik McGuire</h6>
+                  <p class="contact-status online">Online</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user2.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Leon Lawrence</h6>
+                  <p class="contact-status online">Online</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user3.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Gussie Walker</h6>
+                  <p class="contact-status">07:01 PM</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user4.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Agnes Watts</h6>
+                  <p class="contact-status">Yesterday</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user5.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Johanna Larson</h6>
+                  <p class="contact-status">Monday</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /Contacts -->
+
+      <!-- Conversation detail -->
+      <div class="modal-content" id="conversation-detail">
+        <div class="modal-header justify-content-start align-items-center py-0" style="height:63px">
+          <button class="btn btn-icon btn-light bg-white btn-sm rounded-circle mr-3" type="button" data-toggle="chat" data-target="#conversation">
+            <i class="material-icons">chevron_left</i>
+          </button>
+          <div class="media">
+            <div class="img online"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="45"></div>
+            <div class="media-body">
+              <h6>Estella Griffin</h6>
+              <p class="contact-status mt-0 online">Online</p>
+            </div>
+          </div>
+          <button class="btn btn-icon btn-faded-light btn-sm rounded-circle ml-auto" type="button" data-toggle="dropdown">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right font-size-sm">
+            <button class="dropdown-item has-icon" type="button"><i class="material-icons mr-2">clear</i>Clear history</button>
+            <button class="dropdown-item has-icon" type="button"><i class="material-icons mr-2">volume_off</i>Mute notifications</button>
+            <button class="dropdown-item has-icon text-danger" type="button"><i class="material-icons mr-2">delete</i>Delete chat</button>
+          </div>
+        </div>
+        <div class="modal-body px-2">
+
+          <!-- CHAT YESTERDAY -->
+          <div class="chat-divider mt-0"><span>Yesterday</span></div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laudantium aspernatur sequi quas laboriosam expedita illo at doloremque eaque temporibus libero corporis, asperiores possimus ipsa nemo sint quidem, ex nulla?</p>
+                <time class="chat-time">10:01</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <time class="chat-time">10:02</time>
+                <span class="msg-status read"></span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                <time class="chat-time">10:03</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, maxime.</p>
+                <time class="chat-time">10:04</time>
+                <span class="msg-status read"></span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <time class="chat-time">10:05</time>
+              </div>
+            </div>
+          </div>
+          <!-- /CHAT YESTERDAY -->
+
+          <!-- CHAT TODAY -->
+          <div class="chat-divider"><span>Today</span></div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet., consectetur</p>
+                <time class="chat-time">10:00</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maxime consectetur blanditiis eligendi, necessitatibus distinctio architecto porro quis, ratione laboriosam, obcaecati a amet nulla recusandae, fuga asperiores. Architecto fugit, adipisci?</p>
+                <time class="chat-time">10:01</time>
+                <span class="msg-status read"></span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, vero.</p>
+                <ul class="list-unstyled chat-attach">
+                  <li><a href="javascript:void(0)"><i class="fa fa-paperclip"></i> document.zip</a></li>
+                </ul>
+                <time class="chat-time">10:02</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <ul class="list-unstyled chat-attach">
+                  <li><a href="javascript:void(0)"><i class="fa fa-paperclip"></i> update.zip</a></li>
+                </ul>
+                <time class="chat-time">10:03</time>
+                <span class="msg-status read"></span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                Lorem ipsum dolor sit amet, consectetur <br/>
+                <div class="chat-attach-img">
+                  <a href="../img/gallery/6m.jpeg" target="_blank">
+                    <img src="../img/gallery/6m.jpeg" alt="Chat image" class="img-fluid">
+                  </a>
+                </div>
+                <time class="chat-time">10:04</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor <a href="javascript:void(0)">http://example.com</a> sit amet, consectetur </p>
+                <time class="chat-time">10:05</time>
+                <span class="msg-status"></span>
+              </div>
+            </div>
+          </div>
+          <!-- /CHAT TODAY -->
+
+        </div>
+        <div class="modal-footer p-1">
+          <form class="chat-form">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label class="btn btn-icon bg-white chat-btn-attach">
+                  <input type="file" multiple>
+                  <span><i class="material-icons">attachment</i></span>
+                </label>
+              </div>
+              <textarea rows="1" class="form-control autosize shadow-none" placeholder="Write a message..."></textarea>
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary btn-icon border-0 shadow-none rounded-circle ml-1" type="button"><i class="material-icons">chevron_right</i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- /Conversation detail -->
+
+    </div>
+  </div>
+  <!-- /Chat Modal -->
+  <!-- Backdrop for expanded sidebar -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop" data-toggle="sidebar"></div>
+  <!-- Main Scripts -->
+  <script src="../js/script.min.js"></script>
+  <script src="../js/app.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="../../plugins/datatables/jquery.dataTables.bootstrap4.responsive.min.js"></script>
+  <script src="../../plugins/flatpickr/flatpickr.min.js"></script>
+  <script src="../../plugins/flatpickr/l10n/ru.js"></script>
+  <script>
+    $(() => {
+
+      App.checkAll()
+
+      // Run datatable
+
+      var table = $('#example').DataTable({
+          searching: true,
+          paging: true,
+          ordering: false,
+          info: false,
+          dom: '<"top "i>rt<"d-md-flex justify-content-between align-items-center"lp><"clear">',
+          select: {
+            style: 'os',
+            className: 'row-selected bs-select'
+          },
+          lengthMenu: [
+            [10, 25, 50, -1],
+            [10, 25, 50, "Все"]
+          ],
+          language: {
+            "lengthMenu": "<span class='mr-1'>Показывать по</span> _MENU_",
+            "paginate": {
+              "first": "First",
+              "last": "Last",
+              "next": "Пердыдущая",
+              "previous": "Следующая"
+            }
+          }
+
+        })
+      // Apply column filter
+      // Date Range
+      flatpickr('.daterangepicker', {
+        mode: 'range',
+        'locale': 'ru',
+        defaultDate: ["2020.01.01", "2020.01.30"]
+      })
+    })
+  </script>
+
+</body>
+
+</html>
