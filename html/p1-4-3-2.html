@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="../css/style.min.css" id="main-css">
   <link rel="stylesheet" href="../css/sidebar-blue.min.css" id="sidebar-css">
 
-  <title>WANT YOU BACK - Владельцы ТЦ</title>
+  <title>WANT YOU BACK - Распознавание чека</title>
 </head>
 
 <body>
@@ -62,7 +62,7 @@
           <i><img src="../img/icons/users.svg" alt=""></i> Роли
         </a>
         <ul>
-          <li><a href="p1-2-1-1.html"  class="active" >Владельцы ТЦ</a></li>
+          <li><a href="p1-2-1-1.html" >Владельцы ТЦ</a></li>
           <li><a href="p1-2-2-1.html" >Менеджеры ТЦ</a></li>
           <li><a href="p1-2-3-1.html" >Владельцы организаций</a></li>
           <li><a href="p1-2-4-1.html" >Сотрудники организаций</a></li>
@@ -86,7 +86,7 @@
         <ul>
           <li><a href="p1-4-1-1.html" >Кэшбэки (по пользоват.)</a></li>
           <li><a href="p1-4-2-1.html" >Кэшбэки (по мерчантам)</a></li>
-          <li><a href="p1-4-3-1.html" >Проверка чеков</a></li>
+          <li><a href="p1-4-3-1.html"  class="active" >Проверка чеков</a></li>
         </ul>
       </li>
       <li class="nav-item">
@@ -161,536 +161,190 @@
     <div class="main-body">
       <div class="row align-items-center">
         <div class="col-sm-6 mb-3">
-          <h5 class="mb-0">Владельцы ТЦ</h5>
-        </div>
-        <div class="col-sm-6 text-sm-right mb-3">
-          <a href="#" class="btn btn-rose">
-            <i class="mr-1">
-              <img src="../img/icons/plus.svg" alt="">
-            </i>
-            <span>Добавить</span>
-          </a>
+          <h5 class="mb-0">Распознавание чека</h5>
         </div>
       </div>
 
-      <div class="card card-style-1">
+      <div class="card card-style-1 mb-4">
         <div class="card-body">
-          <div class="row align-items-center">
-            <div class="col-lg-9 col-md-8 mb-md-0 mb-2">
-              <div class="d-sm-flex align-items-center">
-                <label class="text-nowrap mr-3 mb-sm-0 mb-2">
-                  <img class="align-middle" src="../img/icons/calendar.svg" alt="">
-                  <span class="d-inline-block align-middle"> Показывать за:</span>
-                </label>
-                <div class="daterange">
-                  <input type="text" class="border-0 daterangepicker" placeholder="">
-                  <img src="../img/icons/arrow.svg" alt="">
+          <div class="row">
+            <!--  -->
+            <div class="col-xl-4 col-sm-6 mb-3">
+              <div class="row">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Дата:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>23.11.2019  23:20</span>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 mb-md-0 mb-2">
-              <div class="block__serach d-flex">
-                <button class="btn btn-link p-0"><img src="../img/icons/search.svg" alt=""></button>
-                <input class="border-0 w-100 form-search" type="text" placeholder="Поиск...">
+            <!--  -->
+            <!--  -->
+            <div class="col-xl-4 col-sm-6 mb-3">
+              <div class="row">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">ФН:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>9282000100313697</span>
+                </div>
               </div>
             </div>
-          </div>
-          <table id="example" class="table dt-responsive nowrap w-100 border-bottom">
-  <!-- Filter columns -->
-  <thead>
-    <tr>
-      <th class="id"><strong>ID</strong> <i class="fa fa-sort-amount-up-alt"></i></th>
-      <th>Время создания</th>
-      <th>ТЦ</th>
-      <th>Организация</th>
-      <th>Пользователь</th>
-      <th>Роль</th>
-      <th>Актив.</th>
-    </tr>
-  </thead>
-  <!-- /Filter columns -->
-  <tbody>
-    <tr>
-      <td class="align-middle">1138</td>
-      <td class="align-middle">2020-02-08 06:38</td>
-      <td class="align-middle">Динамо</td>
-      <td class="align-middle">Динамо</td>
-      <td class="align-middle">+7 (919) ***-*9-32 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-              <label class="custom-control-label" for="customSwitch1"></label>
+            <!--  -->
+            <!--  -->
+            <div class="col-xl-4 col-sm-6 mb-3">
+              <div class="row">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">ФДП:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>284483626</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
+            <!--  -->
+            <!--  -->
+            <div class="col-xl-4 col-sm-6 mb-xl-0">
+              <div class="row">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Сумма:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>3 913.35 ₽</span>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-xl-4 col-sm-6 mb-xl-0">
+              <div class="row">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">ФД:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>21208</span>
+                </div>
+              </div>
+            </div>
+            <!--  -->
           </div>
         </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1137</td>
-      <td class="align-middle">2020-02-07 17:50</td>
-      <td class="align-middle">Fixem</td>
-      <td class="align-middle">Fixem</td>
-      <td class="align-middle">+7 (999) ***-*7-72 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
-              <label class="custom-control-label" for="customSwitch2"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
+      </div>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <div class="table-responsive">
+  <table class="table nowrap w-100 border-bottom">
+    <!-- Filter columns -->
+    <thead>
+      <tr>
+        <th class="border-top-0 pt-0" width="70%">Название</th>
+        <th class="border-top-0 pt-0" nowrap>Цена</th>
+        <th class="border-top-0 pt-0" nowrap>Кол-во</th>
+        <th class="border-top-0 pt-0" nowrap>Сумма</th>
+      </tr>
+    </thead>
+    <!-- /Filter columns -->
+    <tbody>
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Зелпм-ка32ч62ч17</td>
+        <td class="align-middle" nowrap>4 000 000 ₽</td>
+        <td class="align-middle" nowrap>4</td>
+        <td class="align-middle" nowrap>16 000 000 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Кока-кола напиток</td>
+        <td class="align-middle" nowrap>69.00 ₽</td>
+        <td class="align-middle" nowrap>1</td>
+        <td class="align-middle" nowrap>548.65 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Смесь га №2 800г nut</td>
+        <td class="align-middle" nowrap>69.00 ₽</td>
+        <td class="align-middle" nowrap>1</td>
+        <td class="align-middle" nowrap>548.65 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Нап км айран халяль</td>
+        <td class="align-middle" nowrap>1 169.00 ₽</td>
+        <td class="align-middle" nowrap>1</td>
+        <td class="align-middle" nowrap>2 548.65 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Зелпм-ка32ч62ч17</td>
+        <td class="align-middle" nowrap>4 000 000 ₽</td>
+        <td class="align-middle" nowrap>4</td>
+        <td class="align-middle" nowrap>16 000 000 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Кока-кола напиток</td>
+        <td class="align-middle" nowrap>69.00 ₽</td>
+        <td class="align-middle" nowrap>1</td>
+        <td class="align-middle" nowrap>548.65 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Смесь га №2 800г nut</td>
+        <td class="align-middle" nowrap>69.00 ₽</td>
+        <td class="align-middle" nowrap>1</td>
+        <td class="align-middle" nowrap>548.65 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Нап км айран халяль</td>
+        <td class="align-middle" nowrap>1 169.00 ₽</td>
+        <td class="align-middle" nowrap>1</td>
+        <td class="align-middle" nowrap>2 548.65 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Зелпм-ка32ч62ч17</td>
+        <td class="align-middle" nowrap>4 000 000 ₽</td>
+        <td class="align-middle" nowrap>4</td>
+        <td class="align-middle" nowrap>16 000 000 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Кока-кола напиток</td>
+        <td class="align-middle" nowrap>69.00 ₽</td>
+        <td class="align-middle" nowrap>1</td>
+        <td class="align-middle" nowrap>548.65 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Смесь га №2 800г nut</td>
+        <td class="align-middle" nowrap>69.00 ₽</td>
+        <td class="align-middle" nowrap>1</td>
+        <td class="align-middle" nowrap>548.65 ₽</td>
+      </tr>
+      <!-- end row -->
+      <!-- start row -->
+      <tr>
+        <td class="align-middle" nowrap>Нап км айран халяль</td>
+        <td class="align-middle" nowrap>1 169.00 ₽</td>
+        <td class="align-middle" nowrap>1</td>
+        <td class="align-middle" nowrap>2 548.65 ₽</td>
+      </tr>
+      <!-- end row -->
+    </tbody>
+  </table>
 </div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1139</td>
-      <td class="align-middle">2020-02-07 13:35</td>
-      <td class="align-middle">Sneakerf1x</td>
-      <td class="align-middle">Sneakerf1x</td>
-      <td class="align-middle">+7 (977) ***-*3-90 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch3">
-              <label class="custom-control-label" for="customSwitch3"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1140</td>
-      <td class="align-middle">2020-02-07 10:27</td>
-      <td class="align-middle">Сияриён</td>
-      <td class="align-middle">Сияриён</td>
-      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch4">
-              <label class="custom-control-label" for="customSwitch4"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1142</td>
-      <td class="align-middle">2020-02-07 10:27</td>
-      <td class="align-middle">Сияриён-1</td>
-      <td class="align-middle">Сияриён-1</td>
-      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch6">
-              <label class="custom-control-label" for="customSwitch6"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1143</td>
-      <td class="align-middle">2020-02-07 10:27</td>
-      <td class="align-middle">Сияриён</td>
-      <td class="align-middle">Сияриён</td>
-      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch7">
-              <label class="custom-control-label" for="customSwitch7"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1144</td>
-      <td class="align-middle">2020-02-07 10:27</td>
-      <td class="align-middle">Бургерная John’s</td>
-      <td class="align-middle">John’s</td>
-      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch8" checked>
-              <label class="custom-control-label" for="customSwitch8"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1145</td>
-      <td class="align-middle">2020-02-07 10:27</td>
-      <td class="align-middle">Обучение груми...</td>
-      <td class="align-middle">Груминг</td>
-      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch9" checked>
-              <label class="custom-control-label" for="customSwitch9"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1146</td>
-      <td class="align-middle">2020-02-07 10:27</td>
-      <td class="align-middle">Груминг-студия ...</td>
-      <td class="align-middle">Алис групп</td>
-      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch10">
-              <label class="custom-control-label" for="customSwitch10"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1148</td>
-      <td class="align-middle">2020-02-07 10:27</td>
-      <td class="align-middle">Вкусные Букеты</td>
-      <td class="align-middle">Perfecto Bouquet</td>
-      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch10">
-              <label class="custom-control-label" for="customSwitch10"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1149</td>
-      <td class="align-middle">2020-02-07 10:27</td>
-      <td class="align-middle">Вкусные Букеты</td>
-      <td class="align-middle">Perfecto Bouquet</td>
-      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch11">
-              <label class="custom-control-label" for="customSwitch11"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-    <!-- start row -->
-    <tr>
-      <td class="align-middle">1150</td>
-      <td class="align-middle">2020-02-07 10:27</td>
-      <td class="align-middle">Вкусные Букеты</td>
-      <td class="align-middle">Perfecto Bouquet</td>
-      <td class="align-middle">+7 (985) ***-*2-00 <img src="../img/icons/info.svg" alt=""></td>
-      <td class="align-middle">Владелец</td>
-      <td class="align-middle">
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch12">
-              <label class="custom-control-label" for="customSwitch12"></label>
-            </div>
-          </div>
-          <div class="ml-3">
-            <a href="p1-2-1-2.html" class="link-edit">
-              <img src="../img/icons/edit.svg" alt="">
-            </a>
-          </div>
-          <div class="ml-3 mr-3">
-            <div class="drop-box">
-  <a href="#" class="link-remove" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/trash.svg" alt="">
-  </a>
-  <div class="dropdown-menu dropdown-menu-right dropdown-menu-remove p-4">
-    <h5 class="mb-3">Удалить классификатор?</h5>
-    <p>Вы хотите удалить классификатор с id “4”. После удаления его невозможно будет восстановить.</p>
-    <div class="text-right">
-      <a href="#">Отменить</a>
-      <a class="ml-3" href="#">Удалить</a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <!-- end row -->
-  </tbody>
-</table>
         </div>
       </div>
     </div>
@@ -722,7 +376,8 @@
       </div>
     </div>
   </div>
-  <!-- /Search Modal --> <!-- Chat Modal -->
+  <!-- /Search Modal -->
+  <!-- Chat Modal -->
   <div class="modal fade modal-content-right chat-modal" id="chatModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-scrollable modal-sm" role="document">
 
@@ -1068,8 +723,10 @@
 
     </div>
   </div>
-  <!-- /Chat Modal --> <!-- Backdrop for expanded sidebar -->
-  <div class="sidebar-backdrop" id="sidebarBackdrop" data-toggle="sidebar"></div> <!-- Main Scripts -->
+  <!-- /Chat Modal -->
+  <!-- Backdrop for expanded sidebar -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop" data-toggle="sidebar"></div>
+  <!-- Main Scripts -->
   <script src="../js/script.min.js"></script>
   <script src="../js/app.min.js"></script>
 
