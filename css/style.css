@@ -14591,6 +14591,37 @@ time.chat-time {
   border-radius: 0 0 4px 4px;
 }
 
+.block__drag-and-drop--body .block__left {
+  width: 152px;
+  height: 152px;
+  position: relative;
+  border: 1px solid rgba(222, 226, 230, 0.5);
+  margin-right: 34px;
+  border-radius: 4px;
+}
+
+.block__drag-and-drop--body .block__left > img {
+  width: 112px;
+  height: 112px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -56px;
+  margin-left: -56px;
+  z-index: 0;
+}
+
+.block__drag-and-drop--body .block__left a.link-remove {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+}
+
+.block__drag-and-drop--body .block__right {
+  width: calc(100% - 186px);
+}
+
 .block__drag-and-drop--body .drag-item {
   width: 100%;
   max-width: 152px;
@@ -14685,6 +14716,45 @@ time.chat-time {
   margin-right: 12px;
 }
 
+.link-add-filial {
+  color: #495057;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 26px !important;
+}
+
+.link-add-filial:before, .link-add-filial:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #495057;
+}
+
+.link-add-filial:before {
+  width: 1px;
+  height: 12px;
+  left: 6px;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.link-add-filial:after {
+  width: 12px;
+  height: 1px;
+  left: 0;
+  top: 50%;
+}
+
+.link-add-filial:hover {
+  text-decoration: none;
+  color: #880e4f;
+}
+
+.link-add-filial:hover:before, .link-add-filial:hover:after {
+  background: #880e4f;
+}
+
 .btn {
   padding: 10px 16px;
   font-size: 14px;
@@ -14730,6 +14800,34 @@ time.chat-time {
 .sidebar .nav-sub ul a img,
 .sidebar .nav-sub ul a img {
   opacity: 0.54;
+}
+
+.block-nav-tabs {
+  position: relative;
+}
+
+.block-nav-tabs:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #DEE2E6;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+  color: #495057;
+  font-size: 16px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #880E4F;
+  box-shadow: 0 -2px 0 0 #880E4F inset;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #880E4F;
 }
 
 .sidebar {
@@ -14974,22 +15072,23 @@ time.chat-time {
 .main form input.form-control {
   height: calc(1.5em + 1.4rem + 2px);
   padding: 14px 15px;
+  color: black;
 }
 
 .main form input.form-control::-webkit-input-placeholder {
-  color: #495057;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .main form input.form-control::-moz-placeholder {
-  color: #495057;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .main form input.form-control::-ms-input-placeholder {
-  color: #495057;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .main form input.form-control::placeholder {
-  color: #495057;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .main form input.form-control:focus {
@@ -15004,19 +15103,19 @@ time.chat-time {
 }
 
 .main form textarea.form-control::-webkit-input-placeholder {
-  color: #495057;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .main form textarea.form-control::-moz-placeholder {
-  color: #495057;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .main form textarea.form-control::-ms-input-placeholder {
-  color: #495057;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .main form textarea.form-control::placeholder {
-  color: #495057;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .main form textarea.form-control:focus {

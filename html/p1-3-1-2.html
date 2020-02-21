@@ -162,6 +162,128 @@
       <div class="card card-style-1 mb-3">
         <div class="card-body">
           <form action="#">
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="block__drag-and-drop mb-4">
+                  <div class="block__drag-and-drop--body d-flex align-items-center p-3">
+                    <div class="block__left">
+                      <img src="../img/logo-org.jpg" alt="">
+                      <a href="#" class="link-remove">
+                        <img src="../img/icons/trash.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="block__right">
+                      <p>Перетащите логотип в эту область<br> или загрузите файл</p>
+                      <p class="mb-1"><span class="font-size-sm text-muted">Формат изображения: png, jpg.</span></p>
+                      <p class="mb-0"><span class="font-size-sm text-muted">Мин. разрешение: 320x320 px. </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name0">Название</label>
+                  <input class="form-control" type="text" name="name0" placeholder="Введите название">
+                </div>
+                <div class="form-group">
+                  <label for="center">Торговый центр</label>
+                  <select name="sl0" id="sl0" class="bs-select custom w-100">
+                    <option value="0">Европейский</option>
+                    <option value="1">Европейский</option>
+                    <option value="2">Европейский</option>
+                    <option value="3">Европейский</option>
+                  </select>
+                </div>
+                <!--  -->
+                <div class="form-group mb-4">
+                  <label for="msg0">Описание</label>
+                  <textarea name="msg0" id="msg0" cols="30" rows="3" class="form-control" placeholder="Мы команда сервисного центра Fixem и мы рады предложить вам наши услуги по ремонту мобильной техники! Качественный ремонт мобильных телефонов, планшетов и ноутбуков!"></textarea>
+                </div>
+                <!--  -->
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="form-group">
+                      <label for="">Кешбэк</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="20">
+                        <div class="input-group-append">
+                          <span class="input-group-text">%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="form-group">
+                      <label for="">Комиссия</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="4.00">
+                        <div class="input-group-append">
+                          <span class="input-group-text price"> &#8399;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="form-group d-flex align-items-center mt-xl-3 pt-xl-4 pt-2">
+                      <span class="active_check mr-5">Бонусная программа</span>
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch0" checked>
+                        <label class="custom-control-label" for="customSwitch0"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="form-group">
+                      <label for="">Бонус</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="20">
+                        <div class="input-group-append">
+                          <span class="input-group-text">%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+
+              </div>
+              <!-- end col -->
+              <div class="col-xl-6">
+                <div class="form-group">
+                  <label for="center">Категория</label>
+                  <select name="sl1" id="sl1" class="bs-select custom w-100">
+                    <option value="0">Сфера услуг</option>
+                    <option value="1">Сфера услуг</option>
+                    <option value="2">Сфера услуг</option>
+                    <option value="3">Сфера услуг</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="center">Категория</label>
+                  <select name="sl2" id="sl2" class="bs-select custom w-100">
+                    <option value="0">Техника</option>
+                    <option value="1">Техника</option>
+                    <option value="2">Техника</option>
+                    <option value="3">Техника</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="u0">Особые условия</label>
+                  <input class="form-control" type="text" name="u0" placeholder="Введите условия">
+                </div>
+                <!--  -->
+                <div class="form-group mb-4">
+                  <label for="msg01">Тарифы</label>
+                  <textarea name="msg01" id="msg01" cols="30" rows="3" class="form-control" placeholder="Введите описание тарифов"></textarea>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="form-group mb-4">
+                  <label for="msg02">Условия</label>
+                  <textarea name="msg02" id="msg02" cols="30" rows="3" class="form-control" placeholder="Введите описание условий"></textarea>
+                </div>
+                <!--  -->
+              </div>
+              <!-- end col -->
+            </div>
             <hr>
             <div class="form-group mb-0 pt-3 pb-3">
               <button class="btn btn-rose mr-sm-3 mb-1">Сохранить</button>
@@ -174,6 +296,137 @@
       <div class="card card-style-1">
         <div class="card-body">
           <form action="#">
+            <div class="d-flex flex-wrap block-nav-tabs align-items-center">
+              <nav class="nav nav-tabs nav-gap-x-1 mr-4 order-sm-0 order-1">
+                <a class="nav-item nav-link active" href="#f_1" data-toggle="tab">Филиал 1</a>
+                <a class="nav-item nav-link" href="#f_2" data-toggle="tab">Филиал 2</a>
+                <a class="nav-item nav-link" href="#f_3" data-toggle="tab">Филиал 3</a>
+              </nav>
+              <div class="mb-sm-0 mb-2">
+                <a class="btn btn-link link-add-filial" href="#">
+                  <span>Добавить филиал</span>
+                </a>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane show active" id="f_1">
+                <div class="row">
+                  <!-- left col -->
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="name">Название</label>
+                      <input class="form-control" type="text" name="name" placeholder="Введите название">
+                    </div>
+                    <div class="form-group">
+                      <label for="address">Адрес</label>
+                      <span class="edit-input">
+                        <input class="form-control" type="text" name="address" placeholder="Введите адрес">
+                        <a href="#">Указать на карте</a>
+                      </span>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="d1">Широта</label>
+                          <input class="form-control" type="text" name="d1" placeholder="Введите широту">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="d2">Долгота</label>
+                          <input class="form-control" type="text" name="d2" placeholder="Введите долготу">
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="form-group">
+                      <label for="phone">Контактный телефон</label>
+                      <input class="form-control" type="text" name="phone" placeholder="Введите номер телефона">
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="form-group">
+                      <label for="email">Электронная почта</label>
+                      <input class="form-control" type="text" name="email" placeholder="Введите электронную почту">
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="form-group mb-4">
+                      <label for="msg">Описание</label>
+                      <textarea name="msg" id="msg" cols="30" rows="4" class="form-control" placeholder="Введите описание"></textarea>
+                    </div>
+                    <!--  -->
+                    <div class="form-group mb-0">
+                      <div class="row">
+                        <div class="col-md-5 col-sm-6 mb-md-0 mb-3">
+                          <div class="form-group d-flex">
+                            <span class="active_check mr-5">Активно</span>
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" class="custom-control-input" id="customSwitch0" checked>
+                              <label class="custom-control-label" for="customSwitch0"></label>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-sm-6">
+
+                        </div>
+                        <!--  -->
+                      </div>
+                    </div>
+                    <!--  -->
+                  </div>
+                  <!-- right col -->
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="site">Сайт</label>
+                      <input class="form-control" type="text" name="site" placeholder="Введите адрес сайта">
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="vk">Вконтакте</label>
+                          <input class="form-control" type="text" name="vk" placeholder="Введите адрес">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="inst">Instagram</label>
+                          <input class="form-control" type="text" name="inst" placeholder="Введите адрес">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="facebook">Facebook</label>
+                          <input class="form-control" type="text" name="facebook" placeholder="Введите адрес">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="odk">Одноклассники</label>
+                          <input class="form-control" type="text" name="odk" placeholder="Введите адрес">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="form-group">
+                      <label for="people">Контактное лицо</label>
+                      <input class="form-control" type="text" name="people" placeholder="Введите фио">
+                    </div>
+                    <div class="form-group">
+                      <label for="people-phone">Номер телефона контактного лица</label>
+                      <input class="form-control" type="text" name="people-phone" placeholder="Введите номер телефона">
+                    </div>
+                    <div class="form-group">
+                      <label for="people-email">Номер телефона контактного лица</label>
+                      <input class="form-control" type="text" name="people-email" placeholder="Введите электронную почту">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="f_2">Филиал 2</div>
+              <div class="tab-pane" id="f_3">Филиал 3</div>
+            </div>
             <hr>
             <div class="row align-items-center">
               <div class="col-md-7">
