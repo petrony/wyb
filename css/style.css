@@ -14717,6 +14717,21 @@ time.chat-time {
   background-color: #880E4F;
 }
 
+.sidebar .logo img,
+.sidebar .nav-link.active img,
+.sidebar .nav-link:hover img,
+.sidebar .nav-sub ul a.active img,
+.sidebar .nav-sub ul a:hover img {
+  opacity: 1;
+}
+
+.sidebar .nav-link img,
+.sidebar .nav-link img,
+.sidebar .nav-sub ul a img,
+.sidebar .nav-sub ul a img {
+  opacity: 0.54;
+}
+
 .sidebar {
   background: linear-gradient(0deg, #4F082E, #4F082E), linear-gradient(0deg, #880E4F, #880E4F), linear-gradient(0deg, #2B579A, #2B579A);
 }
@@ -15026,6 +15041,11 @@ th.id {
 
 tr:hover td {
   background-color: rgba(255, 227, 161, 0.16);
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
+  background-color: #880e4f;
 }
 
 .page-item .page-link {
