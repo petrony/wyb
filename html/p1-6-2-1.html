@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../css/style.min.css" id="main-css">
   <link rel="stylesheet" href="../css/sidebar-blue.min.css" id="sidebar-css">
 
-  <title>WANT YOU BACK - Карточка счета</title>
+  <title>WANT YOU BACK - Параметры шагомера</title>
 </head>
 
 <body>
@@ -72,12 +72,12 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link has-icon active" href="p1-3-1-1.html">
+        <a class="nav-link has-icon" href="p1-3-1-1.html">
           <i><img src="../img/icons/merchant.svg" alt=""></i> Мерчанты
         </a>
         <ul>
           <li><a href="p1-3-1-1.html" >Каталог организаций</a></li>
-          <li><a href="p1-3-2-1.html"  class="active" >Счета на оплату</a></li>
+          <li><a href="p1-3-2-1.html" >Счета на оплату</a></li>
           <li><a href="p1-3-3-1.html" >ККТ</a></li>
         </ul>
       </li>
@@ -105,7 +105,7 @@
         </a>
         <ul>
           <li><a href="p1-6-1-1.html" >Список начисленных бонусов</a></li>
-          <li><a href="p1-6-2-1.html" >Параметры шагомера</a></li>
+          <li><a href="p1-6-2-1.html"  class="active" >Параметры шагомера</a></li>
         </ul>
       </li>
       <li class="nav-item">
@@ -181,52 +181,53 @@
     <!-- Main body -->
     <div class="main-body">
 
-      <h5 class="mb-3 pt-2 pb-2">Карточка счета</h5>
+      <h5 class="mb-3">Параметры шагомера</h5>
 
       <div class="card card-style-1">
-        <div class="card-body pt-5">
-          <div class="row">
-            <div class="col-xl-6">
-              <div class="row mb-4">
-                <div class="col-sm-4 col-6 text-muted">ID:</div>
-                <div class="col-sm-8 col-6">247694</div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-sm-4 col-6 text-muted">Время платежа:</div>
-                <div class="col-sm-8 col-6">2020-02-07 18:15</div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-sm-4 col-6 text-muted">Магазин:</div>
-                <div class="col-sm-8 col-6">Сиярён-1</div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-sm-4 col-6 text-muted">Сумма платежа:</div>
-                <div class="col-sm-8 col-6">4 300 ₽</div>
+        <div class="card-body">
+          <form action="#">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label for="min-step">Мин. количество шагов</label>
+                  <input type="text" class="form-control" placeholder="10 000">
+                </div>
+                <div class="form-group mb-4">
+                  <label for="n-bonuse">Кол-во бонусов за 1 000 шагов</label>
+                  <div class="bonuse-form-control">
+                    <input type="text" class="form-control" placeholder="200">
+                    <span>бонусов</span>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="n-steps">Норма шагов в день</label>
+                  <div class="bonuse-form-control">
+                    <input type="text" class="form-control" placeholder="15 000">
+                    <span>бонусов</span>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="n-steps-2">Бонус за выполненную норму</label>
+                  <div class="bonuse-form-control">
+                    <input type="text" class="form-control" placeholder="200">
+                    <span>бонусов</span>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="a-steps-d">Штраф за пропущенный день</label>
+                  <div class="bonuse-form-control">
+                    <input type="text" class="form-control" placeholder="50">
+                    <span>бонусов</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-xl-6">
-              <div class="row mb-4">
-                <div class="col-sm-4 col-6 text-muted">Комиссия:</div>
-                <div class="col-sm-8 col-6">86 ₽</div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-sm-4 col-6 text-muted">Количество кэшбэков:</div>
-                <div class="col-sm-8 col-6">6</div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-sm-4 col-6 text-muted">Статус:</div>
-                <div class="col-sm-8 col-6">оплачен</div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-sm-4 col-6 text-muted">Задолженность:</div>
-                <div class="col-sm-8 col-6">нет</div>
-              </div>
+            <hr>
+            <div class="form-group mb-0 pt-3 pb-3">
+              <button class="btn btn-rose mr-sm-3 mb-1">Сохранить</button>
+              <!-- <a class="btn btn-white mb-1" href="p1-2-2-1.html">Вернуться назад</a> -->
             </div>
-          </div>
-          <hr class="mb-4">
-          <div class="pb-4">
-            <a href="#" class="btn btn-rose">Отправить счет</a>
-          </div>
+          </form>
         </div>
       </div>
     </div>

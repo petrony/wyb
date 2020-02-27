@@ -14685,22 +14685,6 @@ time.chat-time {
   div.dataTables_wrapper div.dataTables_paginate ul.pagination .next {
     display: none;
   }
-  .table-child tr {
-    border-bottom: 1px solid #DEE2E6;
-  }
-  .table-child tr td {
-    padding: 5px 0;
-  }
-  .table-child tr:last-child {
-    border-bottom: none;
-  }
-  .table-child tr:last-child td:last-child {
-    padding-bottom: 0;
-  }
-  .table-child td {
-    padding: 0;
-    border: none;
-  }
 }
 
 .link-up,
@@ -14713,6 +14697,13 @@ time.chat-time {
 .link-down:hover,
 .link-remove:hover {
   opacity: 1;
+}
+
+.link-remove span {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .link-remove-black {
@@ -15147,6 +15138,7 @@ time.chat-time {
 .bootstrap-select.show:not(.is-valid):not(.is-invalid) > .dropdown-toggle, .bootstrap-select:not(.is-valid):not(.is-invalid) > .dropdown-toggle:not(:disabled):not(.disabled):active, .bootstrap-select:not(.is-valid):not(.is-invalid) > .dropdown-toggle:not(:disabled):not(.disabled):focus {
   border-color: #880E4F;
   box-shadow: none;
+  color: black;
 }
 
 .input-group-text {
@@ -15234,6 +15226,79 @@ a.select-add-remove:hover:after {
   background: #ffffff;
 }
 
+.select-rows .bootstrap-select > .dropdown-toggle {
+  width: 80px;
+  border-color: #fff;
+}
+
+.select-rows .dropdown-toggle::after {
+  width: 12px;
+}
+
+.bonuse-form-control {
+  position: relative;
+}
+
+.bonuse-form-control input.form-control {
+  padding-right: 10px;
+}
+
+.bonuse-form-control span {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  font-size: 16px;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("../img/icons/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: 3px 4px;
+  background-size: 10px 8px;
+  background-color: #880e4f;
+  border-radius: 2px;
+}
+
+.custom-checkbox .custom-control-label span {
+  font-size: 16px;
+  color: #495057;
+  padding-top: 5px;
+}
+
+.input-year {
+  width: 140px;
+}
+
+.input-time {
+  width: 114px;
+}
+
+.input-year,
+.input-time {
+  position: relative;
+}
+
+.input-year input,
+.input-time input {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0) !important;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.input-year img,
+.input-time img {
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+  top: 12px;
+}
+
+.bootstrap-select > .dropdown-toggle {
+  color: rgba(0, 0, 0, 0.54);
+}
+
 th {
   color: #495057;
   opacity: 0.54;
@@ -15246,6 +15311,15 @@ th.id {
 
 tr:hover td {
   background-color: rgba(255, 227, 161, 0.16);
+}
+
+tr.no-hover td {
+  background-color: white;
+}
+
+tr.no-hover > td {
+  border-left: 1px solid #DEE2E6;
+  border-right: 1px solid #DEE2E6;
 }
 
 table.dataTable {
@@ -15265,40 +15339,24 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
 
 .table-child {
   position: relative;
-  margin-top: -20px;
+  max-height: 240px;
 }
 
-table.dataTable > tbody > tr.child ul.dtr-details {
-  display: block;
-  width: 100%;
+.table-child tr:hover td {
+  background-color: rgba(255, 227, 161, 0.16);
 }
 
-.table tr.child, .markdown-result table tr.child {
-  padding: 0 !important;
-}
-
-.table td.child, .markdown-result table td.child {
-  padding: 0;
-}
-
-.table td.child table, .markdown-result table td.child table {
-  margin-bottom: 0;
-}
-
-.table td.child table tr:first-child td, .markdown-result table td.child table tr:first-child td {
-  border: none;
-}
-
-.table td.child table td, .markdown-result table td.child table td {
-  font-size: 14px;
+.table-phone {
+  height: 182px;
 }
 
 .page-item .page-link {
-  padding: 10px 0;
+  padding: 12px 0;
   width: 42px;
-  height: 40px;
+  height: 46px;
   text-align: center;
   color: #495057;
+  border-color: #ced4da;
 }
 
 .page-item .page-link:focus {
@@ -15353,6 +15411,20 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .drop-box.show a.link-remove {
+  opacity: 1;
+}
+
+.open-child-table img {
+  display: inline-block;
+  position: relative;
+  transform: rotate(180deg);
+  opacity: 0.6;
+}
+
+.open-child-table[aria-expanded="true"] img {
+  display: inline-block;
+  position: relative;
+  transform: rotate(0deg);
   opacity: 1;
 }
 
