@@ -15267,7 +15267,7 @@ a.select-add-remove:hover:after {
 }
 
 .input-year {
-  width: 140px;
+  width: 160px;
 }
 
 .input-time {
@@ -15297,6 +15297,50 @@ a.select-add-remove:hover:after {
 
 .bootstrap-select > .dropdown-toggle {
   color: rgba(0, 0, 0, 0.54);
+}
+
+.input-rubel {
+  position: relative;
+}
+
+.input-rubel span {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+
+.input-search {
+  position: relative;
+}
+
+.input-search i {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+}
+
+.input-search input.form-control {
+  height: calc(1.6em + 1.6rem + 2px) !important;
+  padding: 16px 20px 16px 40px !important;
+  background-color: #f8f9fa;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.input-search input.form-control::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+.input-search input.form-control::-moz-placeholder {
+  color: #aaaaaa;
+}
+
+.input-search input.form-control::-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+.input-search input.form-control::placeholder {
+  color: #aaaaaa;
 }
 
 th {
@@ -15443,6 +15487,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   font-size: 14px;
   color: #495057;
   opacity: 0.54;
+}
+
+.block__map {
+  min-height: 384px;
+  overflow: hidden;
+  border-radius: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
