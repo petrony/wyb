@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Bootstrap variables ========================================================================================================== */
 /* End of bootstrap variables =================================================================================================== */
 /* Theme variables ============================================================================================================== */
@@ -15227,12 +15228,13 @@ a.select-add-remove:hover:after {
 }
 
 .select-rows .bootstrap-select > .dropdown-toggle {
-  width: 80px;
+  width: auto;
   border-color: #fff;
 }
 
 .select-rows .dropdown-toggle::after {
-  width: 12px;
+  width: 20px;
+  margin-left: 10px !important;
 }
 
 .bonuse-form-control {
@@ -15365,6 +15367,29 @@ a.select-add-remove:hover:after {
   margin-left: 10px !important;
 }
 
+.custom-file {
+  height: calc(1.4em + 1.4rem + 2px);
+}
+
+.custom-file .custom-file-input {
+  height: calc(1.4em + 1.4rem + 2px);
+}
+
+.custom-file .custom-file-input + label {
+  height: calc(1.4em + 1.4rem + 2px);
+  font-size: 16px;
+  padding-top: 14px;
+}
+
+.custom-file-label::after {
+  height: calc(1.4em + 1.4rem);
+  line-height: 2;
+}
+
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  content: "Обзор файлов";
+}
+
 th {
   color: #495057;
   opacity: 0.54;
@@ -15435,10 +15460,28 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   padding-right: 15px;
 }
 
+.page-item.active, .page-item:hover {
+  position: relative;
+  z-index: 1;
+}
+
 .page-item.active .page-link, .page-item:hover .page-link {
   background: linear-gradient(0deg, rgba(79, 8, 46, 0.08), rgba(79, 8, 46, 0.08)), #FFFFFF;
   border: 1px solid #4F082E;
   color: #4f082e;
+}
+
+.page-item.disabled {
+  position: relative;
+  z-index: 0;
+}
+
+.page-item.disabled.active .page-link, .page-item.disabled:hover .page-link {
+  color: #adb5bd;
+  pointer-events: none;
+  cursor: auto;
+  background: #fff;
+  border-color: #dee2e6;
 }
 
 .dropdown-menu {

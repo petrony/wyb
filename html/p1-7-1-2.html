@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="../../plugins/flatpickr/flatpickr.min.css">
   <link rel="stylesheet" href="../../plugins/bootstrap-select/bootstrap-select.min.css">
 
+  <link rel="stylesheet" href="../../plugins/flatpickr/plugins/monthSelect/style.css">
+  <link rel="stylesheet" href="../../plugins/clockpicker/bootstrap-clockpicker.min.css">
+
   <!-- Main Style -->
   <link rel="stylesheet" href="../css/style.min.css" id="main-css">
   <link rel="stylesheet" href="../css/sidebar-blue.min.css" id="sidebar-css">
@@ -37,7 +40,7 @@
         <img src="../img/logo.svg" alt="Logo" id="main-logo">
       </span>
       <span>
-        <img src="../img/logo-mini.svg" alt="Logo" id="main-logo">
+        <img src="../img/logo-mini.svg" alt="Logo" id="main-logo2">
       </span>
     </a>
     <a href="#" class="nav-link nav-icon rounded-circle ml-auto" data-toggle="sidebar">
@@ -51,7 +54,6 @@
     <ul class="nav nav-sub" id="menu">
       <li class="nav-item">
         <a class="nav-link has-icon" href="p1-1-1.html">
-          <!-- <i class="fa fa-shopping-cart"></i> -->
           <i><img src="../img/icons/bascket.svg" alt=""></i> Каталог товаров</a>
         <ul>
           <li><a href="p1-1-1.html" >Классификатор товаров</a></li>
@@ -60,7 +62,6 @@
       </li>
       <li class="nav-item">
         <a class="nav-link has-icon" href="p1-2-1-1.html">
-          <!-- <i class="fa fa-users"></i> -->
           <i><img src="../img/icons/users.svg" alt=""></i> Роли
         </a>
         <ul>
@@ -111,19 +112,19 @@
       <li class="nav-item">
         <a class="nav-link has-icon" href="p1-7-1-1.html">
           <i><img src="../img/icons/promo.svg" alt=""></i> Промокоды
-          <ul>
-            <li><a href="p1-7-1-1.html"  class="active" >Список промокодов</a></li>
-          </ul>
         </a>
+        <ul>
+          <li><a href="p1-7-1-1.html"  class="active" >Список промокодов</a></li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link has-icon" href="p1-8-1-1.html">
           <i><img src="../img/icons/push.svg" alt=""></i> Push-нотификации
-          <ul>
-            <li><a href="p1-8-1-1.html"  >Push-нотификации</a></li>
-            <li><a href="p1-8-2-1.html"  >Гео-push-нотификации</a></li>
-          </ul>
         </a>
+        <ul>
+          <li><a href="p1-8-1-1.html"  >Push-нотификации</a></li>
+          <li><a href="p1-8-2-1.html"  >Гео-push-нотификации</a></li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link has-icon" href="p1-9-1-1.html">
@@ -138,11 +139,11 @@
           <i><img src="../img/icons/doc.svg" alt=""></i> Отчёты
         </a>
         <ul>
-          <li><a href="p1-10-1-1.html"  >Новые пользователи</a></li>
-          <li><a href="p1-10-2-1.html"  >Активные пользователи</a></li>
-          <li><a href="p1-10-3-1.html"  >Объем продаж</a></li>
-          <li><a href="p1-10-4-1.html"  >Комиссия (Заработок)</a></li>
-          <li><a href="p1-10-5-1.html"  >Начисленные кэшбэки</a></li>
+          <li><a href="p1-10-1-1.html" >Новые пользователи</a></li>
+          <li><a href="p1-10-2-1.html" >Активные пользователи</a></li>
+          <li><a href="p1-10-3-1.html" >Объем продаж</a></li>
+          <li><a href="p1-10-4-1.html" >Комиссия (Заработок)</a></li>
+          <li><a href="p1-10-5-1.html" >Начисленные кэшбэки</a></li>
         </ul>
       </li>
       <li class="nav-item">
@@ -150,16 +151,15 @@
           <i><img src="../img/icons/settings.svg" alt=""></i> Настройки
         </a>
         <ul>
-          <li><a href="p1-11-1-1.html"  >Профиль</a></li>
-          <li><a href="p1-11-2-1.html"  >Настройка нотификаций</a></li>
-          <li><a href="p1-11-3-1.html"  >Реквизиты</a></li>
-          <li><a href="p1-11-4-1.html"  >Настройка счетов</a></li>
+          <li><a href="p1-11-1-1.html" >Профиль</a></li>
+          <li><a href="p1-11-2-1.html" >Настройка нотификаций</a></li>
+          <li><a href="p1-11-3-1.html" >Реквизиты</a></li>
+          <li><a href="p1-11-4-1.html" >Настройка счетов</a></li>
         </ul>
       </li>
     </ul>
   </div>
   <!-- /Sidebar body -->
-
 </div>
 <!-- /Sidebar -->
 
@@ -203,7 +203,7 @@
         <div class="card-body">
           <form action="#">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-xl-6 col-lg-12 col-md-6">
                 <div class="form-group">
                   <label for="name">Название</label>
                   <input type="text" class="form-control" placeholder="- 50% за второй">
@@ -227,6 +227,41 @@
                     <input type="text" class="form-control" placeholder="700">
                     <span>бонусов</span>
                   </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-6">
+                <div class="form-group">
+                  <label for="name">Загрузить фотографию акции</label>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile4" multiple>
+                    <label class="custom-file-label" for="customFile4">Выбрать файл</label>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="uslovie">Условие получения</label>
+                  <input type="text" class="form-control" placeholder="Введите текст">
+                </div>
+
+                <div class="form-group mb-4">
+                  <label>Действует до:</label>
+                  <div class="d-flex flex-wrap">
+                    <div class="mr-3 mb-0">
+                      <div class="input-year">
+                        <input type="text" class="form-control datepicker-input" placeholder="дд.мм.гггг">
+                        <img src="../img/icons/calendar.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="mb-0">
+                      <div class="input-time">
+                        <input type="text" class="form-control timepicker" placeholder="чч.мм">
+                        <img src="../img/icons/clock.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="link">Ссылка на страницу акции</label>
+                  <input type="text" class="form-control" placeholder="Введите ссылку">
                 </div>
               </div>
             </div>
@@ -622,13 +657,33 @@
   <script src="../js/app.min.js"></script>
 
   <!-- Plugins -->
+  <!-- Plugins -->
   <script src="../../plugins/bootstrap-select/bootstrap-select.min.js"></script>
+  <script src="../../plugins/flatpickr/flatpickr.min.js"></script>
+  <script src="../../plugins/flatpickr/plugins/monthSelect/index.js"></script>
+  <script src="../../plugins/clockpicker/bootstrap-clockpicker.min.js"></script>
+  <script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
   <script>
     $(() => {
 
       App.checkAll()
+
+      Inputmask().mask(document.querySelectorAll('.inputmask'))
+
       $('.bs-select').selectpicker({ style: 'btn' })
       // Run datatable
+      flatpickr('.datepicker-input', {
+        allowInput: true,
+        dateFormat: "d.m.Y"
+      })
+      // Time Picker
+      flatpickr('.timepicker', {
+        enableTime: true,
+        noCalendar: true,
+        dateFormat: 'H.i',
+        minuteIncrement: 1,
+        time_24hr: true
+      })
     })
   </script>
 
