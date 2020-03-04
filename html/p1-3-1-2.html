@@ -287,7 +287,7 @@
                 <div class="form-group">
                   <label for="center">Категория</label>
                   <div class="custome-slect-add d-flex">
-                    <select name="sl1" id="sl1" class="bs-select custom w-100">
+                    <select name="sl1" id="sl1" class="bs-select custom">
                       <option value="0">Сфера услуг</option>
                       <option value="1">Сфера услуг</option>
                       <option value="2">Сфера услуг</option>
@@ -299,7 +299,7 @@
                 <div class="form-group">
                   <label for="center">Категория</label>
                   <div class="custome-slect-add">
-                    <select name="sl2" id="sl2" class="bs-select custom w-100">
+                    <select name="sl2" id="sl2" class="bs-select custom">
                       <option value="0">Техника</option>
                       <option value="1">Техника</option>
                       <option value="2">Техника</option>
@@ -364,7 +364,7 @@
                       <label for="address">Адрес</label>
                       <span class="edit-input">
                         <input class="form-control" type="text" name="address" placeholder="Введите адрес">
-                        <a href="#">Указать на карте</a>
+                        <a href="#" data-toggle="modal" data-target="#mapModal"> Указать на карте</a>
                       </span>
                     </div>
                     <div class="row">
@@ -494,6 +494,31 @@
   </div>
   <!-- /Main -->
 
+  <!-- Modal -->
+  <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModal" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content p-0">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.38" fill-rule="evenodd" clip-rule="evenodd" d="M27 14.4L25.6 13L20 18.6L14.4 13L13 14.4L18.6 20L13 25.6L14.4 27L20 21.4L25.6 27L27 25.6L21.4 20L27 14.4Z" fill="#495057"/></svg>
+          </button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="map">
+            <img class="w-100" src="../img/map2.jpg" alt="">
+            <div class="point">
+              <img src="../img/icons/pin.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-rose mr-4">Сохранить</button>
+          <button type="button" class="btn btn-trans border bg-white" data-dismiss="modal">Отмена</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Search Modal -->
   <div class="modal" id="searchModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg" role="document">

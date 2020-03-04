@@ -212,16 +212,24 @@
       <div class="card card-style-1">
         <div class="card-header mb-4">
           <div class="d-sm-flex align-items-center">
-            <label class="text-nowrap mr-3 mb-sm-0 mb-2">
+            <label class="text-nowrap mb-sm-0 mb-2">
               <img class="align-middle" src="../img/icons/calendar.svg" alt="">
-              <span class="d-inline-block align-middle"> Показывать за:</span>
+              <span class="d-inline-block align-middle"> </span>
             </label>
             <div class="chart-periode">
-              <select name="chart-periode" id="chart-periode" class="bs-select custom">
-                <option value="0">За сегодня</option>
-                <option value="1">За 7 дней</option>
-                <option value="2">За 30 дней</option>
-              </select>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Показывать за: <span>1 год</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">сегодня</a>
+                  <a class="dropdown-item" href="#">7 дней</a>
+                  <a class="dropdown-item" href="#">1 месяц</a>
+                  <a class="dropdown-item" href="#">3 месяц</a>
+                  <a class="dropdown-item" href="#">1 год</a>
+                  <span class="dropdown-item" href="#"><input type="text" class="daterangepicker" placeholder="Выбрать период"></span>
+                </div>
+              </div>
             </div>
           </div>
           <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
@@ -619,6 +627,7 @@
   <!-- Plugins -->
   <script src="../../plugins/bootstrap-select/bootstrap-select.min.js"></script>
   <script src="../../plugins/flatpickr/flatpickr.min.js"></script>
+  <script src="../../plugins/flatpickr/l10n/ru.js"></script>
   <script src="../../plugins/flatpickr/plugins/monthSelect/index.js"></script>
   <script src="../../plugins/clockpicker/bootstrap-clockpicker.min.js"></script>
   <script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
@@ -635,6 +644,10 @@
       flatpickr('.datepicker-input', {
         allowInput: true,
         dateFormat: "d.m.Y"
+      })
+      flatpickr('.daterangepicker', {
+        mode: 'range',
+        'locale': 'ru'
       })
       // Time Picker
       flatpickr('.timepicker', {

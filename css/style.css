@@ -14510,6 +14510,10 @@ time.chat-time {
   outline: none;
 }
 
+.text-green {
+  color: #00c853;
+}
+
 .price {
   font-family: 'PT Sans', serif;
 }
@@ -15071,67 +15075,81 @@ time.chat-time {
   border-color: #000;
 }
 
+.modal form label {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.modal form label,
 .main form label {
   font-size: 14px;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.54);
 }
 
+.modal form input.form-control,
 .main form input.form-control {
   height: calc(1.5em + 1.4rem + 2px);
   padding: 14px 15px;
   color: black;
 }
 
-.main form input.form-control::-webkit-input-placeholder {
+.modal form input.form-control::-webkit-input-placeholder, .main form input.form-control::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
-.main form input.form-control::-moz-placeholder {
+.modal form input.form-control::-moz-placeholder, .main form input.form-control::-moz-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
-.main form input.form-control::-ms-input-placeholder {
+.modal form input.form-control::-ms-input-placeholder, .main form input.form-control::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
+.modal form input.form-control::placeholder,
 .main form input.form-control::placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
+.modal form input.form-control:focus,
 .main form input.form-control:focus {
   outline: 0;
   border-color: #495057;
   box-shadow: none;
 }
 
+.modal form textarea.form-control,
 .main form textarea.form-control {
   color: #495057;
   resize: none;
 }
 
-.main form textarea.form-control::-webkit-input-placeholder {
+.modal form textarea.form-control::-webkit-input-placeholder, .main form textarea.form-control::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
-.main form textarea.form-control::-moz-placeholder {
+.modal form textarea.form-control::-moz-placeholder, .main form textarea.form-control::-moz-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
-.main form textarea.form-control::-ms-input-placeholder {
+.modal form textarea.form-control::-ms-input-placeholder, .main form textarea.form-control::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
+.modal form textarea.form-control::placeholder,
 .main form textarea.form-control::placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
+.modal form textarea.form-control:focus,
 .main form textarea.form-control:focus {
   outline: 0;
   border-color: #495057;
   box-shadow: none;
 }
 
+.modal form textarea.form-control.height-90,
 .main form textarea.form-control.height-90 {
   height: 90px;
 }
@@ -15163,7 +15181,7 @@ time.chat-time {
   position: relative;
 }
 
-.custome-slect-add .bs-select.w-100 {
+.custome-slect-add > .bs-select {
   width: calc(100% - 52px) !important;
 }
 
@@ -15495,6 +15513,33 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   border: none;
 }
 
+.chart-periode .dropdown-toggle {
+  font-size: 16px;
+}
+
+.chart-periode .daterangepicker {
+  border: none;
+  color: #212529;
+  background: url("../img/icons/arrow-data.svg") 100% 6px no-repeat;
+  padding-right: 20px;
+}
+
+.chart-periode .daterangepicker::-webkit-input-placeholder {
+  color: #212529;
+}
+
+.chart-periode .daterangepicker::-moz-placeholder {
+  color: #212529;
+}
+
+.chart-periode .daterangepicker::-ms-input-placeholder {
+  color: #212529;
+}
+
+.chart-periode .daterangepicker::placeholder {
+  color: #212529;
+}
+
 .dropdown-menu-remove {
   width: 280px;
 }
@@ -15560,6 +15605,31 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   border-radius: 7px;
 }
 
+.tooltip {
+  opacity: 1;
+}
+
+.tooltip-inner {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 18px 30px;
+  opacity: 1;
+}
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before,
+.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #ffffff;
+}
+
+.link-edit svg {
+  fill: #495057;
+}
+
+.link-edit:hover svg {
+  fill: #880E4F;
+}
+
 .alert-success {
   width: 335px;
   background: #060606;
@@ -15589,6 +15659,37 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   color: #fe9fe6;
   text-shadow: none;
   opacity: 1;
+}
+
+.modal-header .close {
+  padding: 0.2rem 0.2rem;
+  margin: -0.8rem -0.8rem -0.8rem auto;
+}
+
+#mapModal .modal-header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+}
+
+#mapModal .map {
+  position: relative;
+}
+
+#mapModal .map .point {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mapModal .modal-footer {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

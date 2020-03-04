@@ -213,7 +213,7 @@
                   <label for="password">Пароль</label>
                   <span class="edit-input">
                     <input type="password" name="password" class="form-control" placeholder="">
-                    <a href="#">Сменить пароль</a>
+                    <a href="#" data-toggle="modal" data-target="#passChangeModal">Сменить пароль</a>
                   </span>
                 </div>
               </div>
@@ -292,6 +292,40 @@
       </div>
     </div>
     <!-- /Main body -->
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="passChangeModal" tabindex="-1" role="dialog" aria-labelledby="passChangeModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header pb-0">
+          <h5 class="modal-title mb-3" id="Label">Сменить пароль</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.38" fill-rule="evenodd" clip-rule="evenodd" d="M27 14.4L25.6 13L20 18.6L14.4 13L13 14.4L18.6 20L13 25.6L14.4 27L20 21.4L25.6 27L27 25.6L21.4 20L27 14.4Z" fill="#495057"/></svg>
+          </button>
+        </div>
+        <form action="#">
+          <div class="modal-body pt-0">
+            <div class="form-group">
+              <label for="oldpass">Старый пароль</label>
+              <input type="text" name="oldpass" class="form-control" placeholder="Введите пароль">
+            </div>
+            <div class="form-group">
+              <label for="newpass">Введите пароль</label>
+              <input type="text" name="newpass" class="form-control" placeholder="Введите пароль">
+            </div>
+            <div class="form-group mb-4">
+              <label for="newpass2">Повторите новый пароль</label>
+              <input type="text" name="newpass2" class="form-control" placeholder="Введите пароль">
+            </div>
+            <div class="modal-footer border-top justify-content-start pt-3 pl-1">
+              <button type="button" class="btn btn-rose mr-4">Сохранить</button>
+              <button type="button" class="btn btn-trans border" data-dismiss="modal">Отмена</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <!-- /Main -->
 
