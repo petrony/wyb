@@ -14704,6 +14704,14 @@ time.chat-time {
   opacity: 1;
 }
 
+.link-send svg {
+  fill: #495057;
+}
+
+.link-send:hover svg {
+  fill: #880E4F;
+}
+
 .link-remove span {
   color: rgba(0, 0, 0, 0.54);
   font-size: 14px;
@@ -14967,6 +14975,7 @@ time.chat-time {
 
 .flatpickr-day.selected.endRange:before {
   right: 0;
+  border-radius: 0 50% 50% 0;
 }
 
 .flatpickr-current-month .flatpickr-monthDropdown-months {
@@ -15580,6 +15589,38 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   position: relative;
   transform: rotate(0deg);
   opacity: 1;
+}
+
+.dropup .dropdown-toggle::after {
+  display: none;
+}
+
+.dropup.drop-info p {
+  font-size: 14px;
+}
+
+.dropup.drop-info .name {
+  display: inline-block;
+  width: 60px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.dropup .dropdown-menu {
+  transform: translate3d(calc(-50% + 12px), calc(-100% - 10px), 0px) !important;
+}
+
+.dropup .dropdown-menu::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
 }
 
 .block__user--info i {
