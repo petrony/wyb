@@ -14,17 +14,15 @@
 <link href="../../plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Plugins -->
-  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="../../plugins/datatables/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="../../plugins/flatpickr/flatpickr.min.css">
-  <link rel="stylesheet" href="../../plugins/bootstrap-select/bootstrap-select.min.css">
-
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
   <!-- Main Style -->
   <link rel="stylesheet" href="../css/style.min.css" id="main-css">
   <link rel="stylesheet" href="../css/sidebar-blue.min.css" id="sidebar-css">
 
-  <title>WANT YOU BACK - Параметры шагомера</title>
+  <title>WANT YOU BACK - Распознавание чека</title>
 </head>
 
 <body>
@@ -86,7 +84,7 @@
           <i><img src="../img/icons/cashback.svg" alt=""></i> Кэшбэки
         </a>
         <ul>
-          <li><a href="p1-4-0-1.html" >Все кэшбэки</a></li>
+          <li><a href="p1-4-0-1.html"  class="active" >Все кэшбэки</a></li>
           <li><a href="p1-4-1-1.html" >Кэшбэки (по пользоват.)</a></li>
           <li><a href="p1-4-2-1.html" >Кэшбэки (по мерчантам)</a></li>
           <li><a href="p1-4-3-1.html" >Проверка чеков</a></li>
@@ -106,7 +104,7 @@
         </a>
         <ul>
           <li><a href="p1-6-1-1.html" >Список начисленных бонусов</a></li>
-          <li><a href="p1-6-2-1.html"  class="active" >Параметры шагомера</a></li>
+          <li><a href="p1-6-2-1.html" >Параметры шагомера</a></li>
         </ul>
       </li>
       <li class="nav-item">
@@ -195,54 +193,118 @@
 <!-- /Main header -->
 
     <!-- Main body -->
-    <div class="main-body">
-
-      <h5 class="mb-3">Параметры шагомера</h5>
-
-      <div class="card card-style-1">
+    <div class="main-body pt-4">
+      <div class="row align-items-center">
+        <div class="col-sm-6 mb-3">
+          <h5 class="mb-0">Карточка кэшбэка</h5>
+        </div>
+          <div class="col-sm-6 mb-3 text-sm-right">
+            <a href="#" class="btn btn-rose">
+              <i class="mr-2"><img src="../img/icons/check-w.svg" alt=""></i>
+              <span>Подтвердить</span>
+            </a>
+          </div>
+      </div>
+      <div class="card card-style-1 mb-4">
         <div class="card-body">
-          <form action="#">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="form-group">
-                  <label for="min-step">Мин. количество шагов</label>
-                  <input type="text" class="form-control" placeholder="10 000">
+          <div class="row">
+            <!--  -->
+            <div class="col-md-6 mb-3">
+              <div class="row mb-3">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Время операции:</span>
                 </div>
-                <div class="form-group mb-4">
-                  <label for="n-bonuse">Кол-во бонусов за 1 000 шагов</label>
-                  <div class="bonuse-form-control">
-                    <input type="text" class="form-control" placeholder="200">
-                    <span>бонусов</span>
-                  </div>
+                <div class="col-xl-8 col-7">
+                  <span>2020-02-07 13:35</span>
                 </div>
-                <div class="form-group mb-4">
-                  <label for="n-steps">Норма шагов в день</label>
-                  <div class="bonuse-form-control">
-                    <input type="text" class="form-control" placeholder="15 000">
-                  </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Создан:</span>
                 </div>
-                <div class="form-group mb-4">
-                  <label for="n-steps-2">Бонус за выполненную норму</label>
-                  <div class="bonuse-form-control">
-                    <input type="text" class="form-control" placeholder="200">
-                    <span>бонусов</span>
-                  </div>
+                <div class="col-xl-8 col-7">
+                  <span>2020-02-07 11:54</span>
                 </div>
-                <div class="form-group mb-4">
-                  <label for="a-steps-d">Штраф за пропущенный день</label>
-                  <div class="bonuse-form-control">
-                    <input type="text" class="form-control" placeholder="50">
-                    <span>бонусов</span>
-                  </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Баланс:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>Не подтвержден</span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Сумма:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>2 750 ₽</span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Кэшбэк:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>10 %/275 ₽</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Комиссия:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>2 %/55 ₽</span>
                 </div>
               </div>
             </div>
-            <hr>
-            <div class="form-group mb-0 pt-3 pb-3">
-              <button class="btn btn-rose mr-sm-3 mb-1">Сохранить</button>
-              <!-- <a class="btn btn-white mb-1" href="p1-2-2-1.html">Вернуться назад</a> -->
+            <!--  -->
+            <!--  -->
+            <div class="col-md-6 mb-3">
+              <div class="row mb-3">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">ТЦ:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>Европейский</span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Мерчант:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>Алёнка</span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">ФИО:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>Ручнов Павел Фёдорович</span>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">Телефон:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>+7 (964) ***-*5-59</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-4 col-5">
+                  <span class="text-muted">E-mail:</span>
+                </div>
+                <div class="col-xl-8 col-7">
+                  <span>ruchnov@yandex.ru</span>
+                </div>
+              </div>
             </div>
-          </form>
+            <!--  -->
+          </div>
         </div>
       </div>
     </div>
@@ -629,13 +691,48 @@
   <script src="../js/app.min.js"></script>
 
   <!-- Plugins -->
-  <script src="../../plugins/bootstrap-select/bootstrap-select.min.js"></script>
+  <script src="../../plugins/datatables/jquery.dataTables.bootstrap4.responsive.min.js"></script>
+  <script src="../../plugins/flatpickr/flatpickr.min.js"></script>
+  <script src="../../plugins/flatpickr/l10n/ru.js"></script>
   <script>
     $(() => {
 
       App.checkAll()
-      $('.bs-select').selectpicker({ style: 'btn' })
+
       // Run datatable
+
+      var table = $('#example').DataTable({
+          searching: true,
+          paging: true,
+          ordering: false,
+          info: false,
+          dom: '<"top "i>rt<"d-md-flex justify-content-between align-items-center"lp><"clear">',
+          select: {
+            style: 'os',
+            className: 'row-selected bs-select'
+          },
+          lengthMenu: [
+            [10, 25, 50, -1],
+            [10, 25, 50, "Все"]
+          ],
+          language: {
+            "lengthMenu": "<span class='mr-1'>Показывать по</span> _MENU_",
+            "paginate": {
+              "first": "First",
+              "last": "Last",
+              "previous": "Предыдущая",
+              "next": "Следующая"
+            }
+          }
+
+        })
+      // Apply column filter
+      // Date Range
+      flatpickr('.daterangepicker', {
+        mode: 'range',
+        'locale': 'ru',
+        defaultDate: ["2020.01.01", "2020.01.30"]
+      })
     })
   </script>
 

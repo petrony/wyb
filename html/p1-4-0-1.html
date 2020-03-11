@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../css/style.min.css" id="main-css">
   <link rel="stylesheet" href="../css/sidebar-blue.min.css" id="sidebar-css">
 
-  <title>WANT YOU BACK - Проверка чеков</title>
+  <title>WANT YOU BACK - Все кэшбэки</title>
 </head>
 
 <body>
@@ -84,10 +84,10 @@
           <i><img src="../img/icons/cashback.svg" alt=""></i> Кэшбэки
         </a>
         <ul>
-          <li><a href="p1-4-0-1.html" >Все кэшбэки</a></li>
+          <li><a href="p1-4-0-1.html"  class="active" >Все кэшбэки</a></li>
           <li><a href="p1-4-1-1.html" >Кэшбэки (по пользоват.)</a></li>
           <li><a href="p1-4-2-1.html" >Кэшбэки (по мерчантам)</a></li>
-          <li><a href="p1-4-3-1.html"  class="active" >Проверка чеков</a></li>
+          <li><a href="p1-4-3-1.html" >Проверка чеков</a></li>
         </ul>
       </li>
       <li class="nav-item">
@@ -195,8 +195,8 @@
     <!-- Main body -->
     <div class="main-body">
       <div class="row align-items-center">
-        <div class="col-sm-6 mb-3">
-          <h5 class="mb-0">Проверка чеков</h5>
+        <div class="col-md-6 mb-3">
+          <h5 class="mb-0">Все кэшбэки</h5>
         </div>
       </div>
 
@@ -227,36 +227,19 @@
   <thead>
     <tr>
       <th class="id" width='60'><strong>ID</strong> <i class="fa fa-sort-amount-up-alt"></i></th>
-      <th>Дата</th>
-      <th>Филиал</th>
+      <th>Время операции</th>
       <th>Получатель</th>
-      <th>Сумма</th>
-      <th>Кэшбэк</th>
-      <th>Комиссия</th>
+      <th>Мерчант</th>
+      <th width="240">Кэшбэк</th>
     </tr>
   </thead>
   <!-- /Filter columns -->
   <tbody>
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">СТО Уфа
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -275,18 +258,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">548.65 ₽</td>
-      <td class="align-middle">2.4 %/14.03 ₽</td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/checked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -294,24 +318,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Sneakerf1x Shoes
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -330,18 +339,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">2 985.36 ₽</td>
-      <td class="align-middle">10 %/298.54 ₽</td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/checked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -349,24 +399,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Fixem Technic
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -385,18 +420,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -404,24 +480,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Сиярён Store
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -440,18 +501,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -459,24 +561,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">John’s Burger
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -495,18 +582,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -514,24 +642,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Grooming
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -550,18 +663,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -569,24 +723,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">СТО Уфа
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -605,18 +744,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">548.65 ₽</td>
-      <td class="align-middle">2.4 %/14.03 ₽</td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/checked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -624,24 +804,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Sneakerf1x Shoes
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -660,18 +825,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">2 985.36 ₽</td>
-      <td class="align-middle">10 %/298.54 ₽</td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/checked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -679,24 +885,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Fixem Technic
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -715,18 +906,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -734,24 +966,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Сиярён Store
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -770,18 +987,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -789,24 +1047,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">John’s Burger
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -825,18 +1068,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -844,24 +1128,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Grooming
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -880,18 +1149,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -899,24 +1209,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">СТО Уфа
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -935,18 +1230,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">548.65 ₽</td>
-      <td class="align-middle">2.4 %/14.03 ₽</td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/checked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -954,24 +1290,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Sneakerf1x Shoes
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -990,18 +1311,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">2 985.36 ₽</td>
-      <td class="align-middle">10 %/298.54 ₽</td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/checked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -1009,24 +1371,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Fixem Technic
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -1045,18 +1392,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -1064,24 +1452,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Сиярён Store
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -1100,18 +1473,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -1119,24 +1533,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">John’s Burger
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -1155,18 +1554,59 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
@@ -1174,24 +1614,9 @@
     <!-- end row -->
     <!-- start row -->
     <tr>
-      <td class="align-middle" >247692</td>
-      <td class="align-middle">2020-02-07</td>
-      <td class="align-middle">Grooming
-        <div class="dropcustome drop-info d-inline-block">
-  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="../img/icons/info.svg" alt="">
-  </a>
-  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
-    <table>
-      <tr>
-        <td><span class="name">ТЦ:</span></td>
-        <td><span>Европейский<span></span></td>
-      </tr>
-    </table>
-  </div>
-</div>
-      </td>
-      <td class="align-middle">+7 (914) ***-*4-94
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
         <div class="dropcustome drop-info d-inline-block">
   <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <img src="../img/icons/info.svg" alt="">
@@ -1210,23 +1635,227 @@
   </div>
 </div>
       </td>
-      <td class="align-middle">4 895.36 ₽</td>
-      <td class="align-middle">10 %/489.59 ₽</td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
       <td class="align-middle">
         <div class="d-flex justify-content-between">
-          <div class="mr-4">0.6 %/3.51 ₽5</div>
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
           <div class="d-flex">
-            <div class="mr-5">
-              <a href="./p1-4-3-2.html" class="link-card" data-toggle="tooltip" data-placement="top" title="Распознавание чека">
-                <img src="../img/icons/card.svg" alt="">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
               </a>
             </div>
-            <div><img src="../img/icons/nochecked.svg" alt=""></div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </td>
     </tr>
     <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td nowrap><span class="name">ФИО:</span></td>
+        <td nowrap>Ручнов Павел Фёдорович</td>
+      </tr>
+      <tr>
+        <td nowrap><span class="name">E-mail:</span></td>
+        <td nowrap>ruchnov@yandex.ru</td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
+      <td class="align-middle">Автомойка Тура
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
+      <td class="align-middle">
+        <div class="d-flex justify-content-between">
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
+          <div class="d-flex">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/checked.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+    <!-- start row -->
+    <tr>
+      <td class="align-middle">247692</td>
+      <td class="align-middle">2020-02-07 13:35</td>
+      <td class="align-middle text-nowrap">+7 (919) ***-*9-32
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td nowrap><span class="name">ФИО:</span></td>
+        <td nowrap>Ручнов Павел Фёдорович</td>
+      </tr>
+      <tr>
+        <td nowrap><span class="name">E-mail:</span></td>
+        <td nowrap>ruchnov@yandex.ru</td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
+      <td class="align-middle">Алёнка
+        <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pl-3 pr-3 pt-2 pb-2">
+    <table>
+      <tr>
+        <td><span class="name">ТЦ:</span></td>
+        <td><span>Европейский<span></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+      </td>
+      <td class="align-middle">
+        <div class="d-flex justify-content-between">
+          <div class="mr-4">
+            0.6 %/3.51 ₽5
+            <div class="dropcustome drop-info d-inline-block">
+  <a href="#" class="btn btn-link dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/icons/info.svg" alt="">
+  </a>
+  <div class="dropdown-menu pt-2 pb-2 pl-3 pr-3">
+    <table>
+      <tr>
+        <td><span class="name">Сумма:</span></td>
+        <td>2 750 ₽</td>
+      </tr>
+      <tr>
+        <td><span class="name">Комиссия:</span></td>
+        <td>2 %/55 ₽</td>
+      </tr>
+    </table>
+  </div>
+</div>
+          </div>
+          <div class="d-flex">
+            <div class="mr-4">
+              <a href="p1-4-0-2.html" data-toggle="tooltip" data-placement="top" title="Карточка кэшбэка">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19H5V5H15.5858L19 8.41421V19Z" stroke="#495057" stroke-width="2"/>
+                  <path d="M19 9H15V5H15.5858L19 8.41421V9Z" stroke="#495057" stroke-width="2"/>
+                  <rect x="16" y="15" width="8" height="2" transform="rotate(-180 16 15)" fill="#495057"/>
+                  <rect x="12" y="11" width="4" height="2" transform="rotate(-180 12 11)" fill="#495057"/>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="../img/icons/nochecked.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- end row -->
+
   </tbody>
 </table>
         </div>
@@ -1622,13 +2251,6 @@
     $(() => {
 
       App.checkAll()
-
-      $(".dropcustome").hover(function(){
-        var dropdownMenu = $(this).children(".dropdown-menu");
-        if(dropdownMenu.is(":visible")){
-          dropdownMenu.parent().toggleClass("open");
-        }
-      });
 
       // Run datatable
 

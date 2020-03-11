@@ -15431,6 +15431,11 @@ th.id {
   opacity: 1;
 }
 
+table tbody td a {
+  text-decoration: none;
+  color: #495057;
+}
+
 tr:hover td {
   background-color: rgba(255, 227, 161, 0.16);
 }
@@ -15595,25 +15600,32 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   opacity: 1;
 }
 
-.dropup .dropdown-toggle::after {
+[class*=drop] .dropdown-toggle::after {
   display: none;
 }
 
-.dropup.drop-info p {
+[class*=drop].drop-info table td {
   font-size: 14px;
+  border-top: none;
+  background: none;
+  padding: 0;
 }
 
-.dropup.drop-info .name {
+[class*=drop].drop-info .name {
   display: inline-block;
-  width: 60px;
   color: rgba(0, 0, 0, 0.54);
+  padding-right: 30px;
 }
 
-.dropup .dropdown-menu {
+.dropcustome {
+  position: relative;
+}
+
+.dropcustome .dropdown-menu {
   transform: translate3d(calc(-50% + 12px), calc(-100% - 10px), 0px) !important;
 }
 
-.dropup .dropdown-menu::after {
+.dropcustome .dropdown-menu::after {
   content: "";
   display: block;
   width: 0;
@@ -15660,6 +15672,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   padding: 18px 30px;
   opacity: 1;
+}
+
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #ffffff;
 }
 
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before,
