@@ -14514,6 +14514,10 @@ time.chat-time {
   color: #00c853;
 }
 
+.text-gray {
+  color: rgba(0, 0, 0, 0.54);
+}
+
 .price {
   font-family: 'PT Sans', serif;
 }

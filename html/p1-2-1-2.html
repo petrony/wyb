@@ -204,6 +204,22 @@
             <div class="row">
               <div class="col-lg-5">
                 <div class="form-group">
+                  <span class="mr-4 text-gray">ID пользователя:</span>
+                  <span>1138</span>
+                </div>
+                <div class="form-group">
+                  <label for="name0">Фамилия</label>
+                  <input type="text" name="name0" id="name0" class="form-control" placeholder="Гришин">
+                </div>
+                <div class="form-group">
+                  <label for="name00">Имя</label>
+                  <input type="text" name="name00" id="name00" class="form-control" placeholder="Тимур">
+                </div>
+                <div class="form-group">
+                  <label for="name000">Отчество</label>
+                  <input type="text" name="name000" id="name000" class="form-control" placeholder="Сергеевич">
+                </div>
+                <div class="form-group">
                   <label for="name">Торговый центр</label>
                   <select name="sl0" id="sl0" class="bs-select custom w-100">
                     <option value="0">Динамо</option>
@@ -211,20 +227,48 @@
                     <option value="2">Динамо</option>
                     <option value="3">Динамо</option>
                   </select>
-
                 </div>
                 <div class="form-group mb-4">
-                  <label for="description">ID пользователя</label>
-                  <select name="sl1" id="sl1" class="bs-select custom w-100">
-                    <option value="0">1138</option>
-                    <option value="1">1139</option>
-                    <option value="2">1140</option>
-                    <option value="3">1141</option>
+                  <label for="description">Организация</label>
+                  <select name="sl2" id="sl2" class="bs-select custom w-100">
+                    <option value="0">Sneakerf1x</option>
+                    <option value="1">Sneakerf1x</option>
+                    <option value="2">Sneakerf1x</option>
+                    <option value="3">Sneakerf1x</option>
                   </select>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="row">
+                  <div class="col-sm-6 mb-sm-0 mb-3">
+                    <div class="form-group d-flex">
+                      <span class="active_check mr-5">Активен</span>
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch0" checked>
+                        <label class="custom-control-label" for="customSwitch0"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+                 <div class="form-group">
+                  <label for="phone">Телефон</label>
+                  <input type="text" class="form-control inputmask" data-inputmask="'mask': '+7 (999) - 999 - 99 - 99'" placeholder="+7 (___) - ___ - __ - __">
+                </div>
+                 <div class="form-group">
+                  <label for="phone">Email</label>
+                  <input type="text" class="form-control" placeholder="Youname@gmai.com">
+                </div>
+                <div class="form-group">
+                  <label for="password">Пароль</label>
+                  <span class="edit-input">
+                    <input type="password" name="password" class="form-control" placeholder="">
+                    <a href="#" data-toggle="modal" data-target="#passChangeModal">Сменить пароль</a>
+                  </span>
                 </div>
                 <div class="form-group mb-4">
                   <label for="description">Роль</label>
-                  <select name="sl2" id="sl2" class="bs-select custom w-100">
+                  <select name="sl3" id="sl3" class="bs-select custom w-100">
                     <option value="0">Владелец</option>
                     <option value="1">Владелец</option>
                     <option value="2">Владелец</option>
@@ -245,7 +289,40 @@
     <!-- /Main body -->
   </div>
   <!-- /Main -->
-
+  <!-- Modal -->
+  <div class="modal fade" id="passChangeModal" tabindex="-1" role="dialog" aria-labelledby="passChangeModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header pb-0">
+          <h5 class="modal-title mb-3" id="Label">Сменить пароль</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.38" fill-rule="evenodd" clip-rule="evenodd" d="M27 14.4L25.6 13L20 18.6L14.4 13L13 14.4L18.6 20L13 25.6L14.4 27L20 21.4L25.6 27L27 25.6L21.4 20L27 14.4Z" fill="#495057"/></svg>
+          </button>
+        </div>
+        <form action="#">
+          <div class="modal-body pt-0">
+            <div class="form-group">
+              <label for="oldpass">Старый пароль</label>
+              <input type="text" name="oldpass" class="form-control" placeholder="Введите пароль">
+            </div>
+            <div class="form-group">
+              <label for="newpass">Введите пароль</label>
+              <input type="text" name="newpass" class="form-control" placeholder="Введите пароль">
+            </div>
+            <div class="form-group mb-4">
+              <label for="newpass2">Повторите новый пароль</label>
+              <input type="text" name="newpass2" class="form-control" placeholder="Введите пароль">
+            </div>
+            <div class="modal-footer border-top justify-content-start pt-3 pl-1">
+              <button type="button" class="btn btn-rose mr-4">Сохранить</button>
+              <button type="button" class="btn btn-trans border" data-dismiss="modal">Отмена</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- Search Modal -->
   <div class="modal" id="searchModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
@@ -626,10 +703,14 @@
 
   <!-- Plugins -->
   <script src="../../plugins/bootstrap-select/bootstrap-select.min.js"></script>
+  <script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
   <script>
     $(() => {
 
       App.checkAll()
+
+      Inputmask().mask(document.querySelectorAll('.inputmask'))
+
       $('.bs-select').selectpicker({ style: 'btn' })
       // Run datatable
     })
