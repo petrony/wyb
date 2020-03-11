@@ -15466,7 +15466,17 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
 
 .table-child {
   position: relative;
-  max-height: 240px;
+  max-height: 220px;
+}
+
+.table-child td {
+  font-size: 14px;
+  padding: .6rem;
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.table-child tr:nth-child(1) td {
+  border-top: none !important;
 }
 
 .table-child tr:hover td {
@@ -15670,7 +15680,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   background: #ffffff;
   color: #000000;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 18px 30px;
+  padding: 14px 25px;
   opacity: 1;
 }
 
