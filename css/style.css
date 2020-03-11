@@ -15632,7 +15632,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
 }
 
 .dropcustome .dropdown-menu {
-  transform: translate3d(calc(-50% + 12px), calc(-100% - 10px), 0px) !important;
+  left: -50% !important;
+  transform: translate3d(calc(-50% + 26px), calc(-100% - 10px), 0px) !important;
 }
 
 .dropcustome .dropdown-menu::after {
@@ -15647,6 +15648,17 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   bottom: -10px;
   left: 50%;
   margin-left: -10px;
+}
+
+.dropcustome.dropup .dropdown-menu {
+  transform: translate3d(calc(-50% + 26px), calc(50% - 4px), 0px) !important;
+  box-shadow: 0 -14px 34px rgba(0, 0, 0, 0.16);
+}
+
+.dropcustome.dropup .dropdown-menu::after {
+  bottom: 100%;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #ffffff transparent;
 }
 
 .block__user--info i {
