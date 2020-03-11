@@ -15616,9 +15616,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
 
 [class*=drop].drop-info table td {
   font-size: 14px;
-  border-top: none;
+  border-top: none !important;
   background: none;
-  padding: 0;
+  padding: 4px 0;
 }
 
 [class*=drop].drop-info .name {
