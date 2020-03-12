@@ -14530,6 +14530,26 @@ time.chat-time {
   width: 100%;
 }
 
+.img_ava {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  display: inline-block;
+  font-style: normal;
+  color: #ffffff;
+  background: #4E082D;
+  border-radius: 50%;
+  margin: 5px 0;
+}
+
+.img_ava-big {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 32px;
+}
+
 .sidebar-collapse .logo span:nth-child(1) {
   display: none;
 }
@@ -15610,18 +15630,18 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   opacity: 1;
 }
 
-[class*=drop] .dropdown-toggle::after {
+.dropcustome .dropdown-toggle::after {
   display: none;
 }
 
-[class*=drop].drop-info table td {
+.dropcustome.drop-info table td {
   font-size: 14px;
   border-top: none !important;
   background: none;
   padding: 4px 0;
 }
 
-[class*=drop].drop-info .name {
+.dropcustome.drop-info .name {
   display: inline-block;
   color: rgba(0, 0, 0, 0.54);
   padding-right: 30px;
