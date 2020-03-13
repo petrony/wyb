@@ -14703,6 +14703,21 @@ time.chat-time {
   z-index: 2;
 }
 
+.icon-svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  position: relative;
+}
+
+.icon-svg svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media (min-width: 992px) {
   .main {
     margin-left: 256px;
@@ -15114,6 +15129,7 @@ time.chat-time {
   color: rgba(0, 0, 0, 0.54);
 }
 
+form.auth label,
 .modal form label,
 .main form label {
   font-size: 14px;
@@ -15121,6 +15137,7 @@ time.chat-time {
   color: rgba(0, 0, 0, 0.54);
 }
 
+form.auth input.form-control,
 .modal form input.form-control,
 .main form input.form-control {
   height: calc(1.5em + 1.4rem + 2px);
@@ -15128,23 +15145,25 @@ time.chat-time {
   color: black;
 }
 
-.modal form input.form-control::-webkit-input-placeholder, .main form input.form-control::-webkit-input-placeholder {
+form.auth input.form-control::-webkit-input-placeholder, .modal form input.form-control::-webkit-input-placeholder, .main form input.form-control::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
-.modal form input.form-control::-moz-placeholder, .main form input.form-control::-moz-placeholder {
+form.auth input.form-control::-moz-placeholder, .modal form input.form-control::-moz-placeholder, .main form input.form-control::-moz-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
-.modal form input.form-control::-ms-input-placeholder, .main form input.form-control::-ms-input-placeholder {
+form.auth input.form-control::-ms-input-placeholder, .modal form input.form-control::-ms-input-placeholder, .main form input.form-control::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
+form.auth input.form-control::placeholder,
 .modal form input.form-control::placeholder,
 .main form input.form-control::placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
+form.auth input.form-control:focus,
 .modal form input.form-control:focus,
 .main form input.form-control:focus {
   outline: 0;
@@ -15152,29 +15171,32 @@ time.chat-time {
   box-shadow: none;
 }
 
+form.auth textarea.form-control,
 .modal form textarea.form-control,
 .main form textarea.form-control {
   color: #495057;
   resize: none;
 }
 
-.modal form textarea.form-control::-webkit-input-placeholder, .main form textarea.form-control::-webkit-input-placeholder {
+form.auth textarea.form-control::-webkit-input-placeholder, .modal form textarea.form-control::-webkit-input-placeholder, .main form textarea.form-control::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
-.modal form textarea.form-control::-moz-placeholder, .main form textarea.form-control::-moz-placeholder {
+form.auth textarea.form-control::-moz-placeholder, .modal form textarea.form-control::-moz-placeholder, .main form textarea.form-control::-moz-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
-.modal form textarea.form-control::-ms-input-placeholder, .main form textarea.form-control::-ms-input-placeholder {
+form.auth textarea.form-control::-ms-input-placeholder, .modal form textarea.form-control::-ms-input-placeholder, .main form textarea.form-control::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
+form.auth textarea.form-control::placeholder,
 .modal form textarea.form-control::placeholder,
 .main form textarea.form-control::placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
+form.auth textarea.form-control:focus,
 .modal form textarea.form-control:focus,
 .main form textarea.form-control:focus {
   outline: 0;
@@ -15182,9 +15204,35 @@ time.chat-time {
   box-shadow: none;
 }
 
+form.auth textarea.form-control.height-90,
 .modal form textarea.form-control.height-90,
 .main form textarea.form-control.height-90 {
   height: 90px;
+}
+
+form.auth .btn {
+  min-width: 160px;
+  padding: 16px 30px;
+}
+
+form.auth .form-links {
+  color: #880e4f;
+}
+
+form.auth .form-links span {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-bottom: 1px solid rgba(136, 14, 79, 0.2);
+}
+
+form.auth .form-links a {
+  color: #880e4f;
+  border-bottom: 1px solid rgba(136, 14, 79, 0.2);
+}
+
+form.auth .form-links a:hover {
+  border-bottom: 1px solid rgba(136, 14, 79, 0);
+  text-decoration: none;
 }
 
 .bootstrap-select.show:not(.is-valid):not(.is-invalid) > .dropdown-toggle, .bootstrap-select:not(.is-valid):not(.is-invalid) > .dropdown-toggle:not(:disabled):not(.disabled):active, .bootstrap-select:not(.is-valid):not(.is-invalid) > .dropdown-toggle:not(:disabled):not(.disabled):focus {
